@@ -1,0 +1,13 @@
+.online-help-section{
+    .online-img{
+        border: 10px solid #D8D8D8;
+        overflow: hidden;
+        img{
+            transition: 0.5s linear;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        
+    }
+}

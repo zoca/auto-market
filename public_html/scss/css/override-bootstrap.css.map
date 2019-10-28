@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../theme-partial/override-bootstrap.scss"
+    ],
+    "names": [],
+    "file": "override-bootstrap.css"
+}

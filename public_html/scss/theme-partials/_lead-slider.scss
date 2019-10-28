@@ -1,0 +1,16 @@
+$slider-text-color: $base-link-color;
+$background-caption-color: rgba(000, 000, 000, 0.6);
+
+.slider-wrapper {
+  
+  .custom-caption {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 50%;
+    height: 45%;
+    background-color: $background-caption-color;
+    padding: 21px 57px 76px 22px;
+    color: $slider-text-color;
+  }
+}
