@@ -4,3 +4,12 @@ img{
 
 $background-color: #061D44;
 $base-link-color: #FFFFFF;
+
+$font-color: #000000;
+
+$font-bold: $helvetica-bold;
+
+ body{
+     color: $font-color;
+     font-family: $helvetica-regular;
+ }

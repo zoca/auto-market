@@ -1,7 +1,50 @@
 //theme fonts
 @font-face {
-    font-family: 'HelveticaNeue-Bold';
-    src: url('font/HelveticaNeue-Bold/HelveticaNeue-Bold.eot') format('embedded-opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "HelveticaNeue-Bold";
+  src: url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.otf") format("opentype"),
+    url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff") format("woff"),
+    url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf") format("truetype"),
+    url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeueRegular";
+  src: url("fonts/HelveticaNeueRegular/HelveticaNeueRegular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/HelveticaNeueRegular/HelveticaNeueRegular.woff") format("woff"),
+    url("fonts/HelveticaNeueRegular/HelveticaNeueRegular.ttf") format("truetype"),
+    url("fonts/HelveticaNeueRegular/HelveticaNeueRegular.svg#HelveticaNeueRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("fonts/HelveticaNeue/HelveticaNeue.eot?#iefix") format("embedded-opentype"),
+    url("fonts/HelveticaNeue/HelveticaNeue.woff") format("woff"),
+    url("fonts/HelveticaNeue/HelveticaNeue.ttf") format("truetype"),
+    url("fonts/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+    url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.otf')  format('opentype'),
+       url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.woff') format('woff'), 
+       url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf')  format('truetype'),
+        url('fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$helvetica-bold: "HelveticaNeue-Bold";
+
+$helvetica-regular: "HelveticaNeue";
+
+$helvetica-medium: 'HelveticaNeue-Medium';
+
+

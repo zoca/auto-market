@@ -1,13 +1,45 @@
-.online-help-section{
-    .online-img{
-        border: 10px solid #D8D8D8;
-        overflow: hidden;
-        img{
-            transition: 0.5s linear;
-            &:hover{
-                transform: scale(1.1);
-            }
+$online-link-color: $font-color;
+$online-btn-bg: $background-color;
+$text-btn-color: $base-link-color;
+
+.online-help-section {
+  .online-img {
+    border: 10px solid #d8d8d8;
+    overflow: hidden;
+    img {
+      transition: 0.5s linear;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.online-content{
+    h3{
+        font-family: $helvetica-bold;
+    }
+    a{
+        color: $online-link-color;
+        line-height: 2.2rem;
+    }
+    p{
+        line-height: 2.2rem; 
+    }
+    p:nth-of-type(2){
+        margin-bottom: 2.2rem;
+    }
+
+    .input-group{
+        button{
+            background-color: $online-btn-bg;
+            color: $text-btn-color;
+            padding:  5px 15px;
         }
-        
+    }
+
+    ul li a .fas{
+        font-size: 1rem;
+        margin-right: 2px;
     }
 }
