@@ -7826,5 +7826,36 @@ header {
     bottom: -70px; }
   .clients-links .owl-theme .custom-nav .owl-next {
     bottom: -70px; } }
+.bottom-links .bottom-links-item {
+  background-color: #061D44;
+  padding: 10px 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.2); }
+  .bottom-links .bottom-links-item ul li a {
+    color: #FFFFFF; }
+.bottom-links .bottom-right-side {
+  background-color: #ececec;
+  padding: 20px 25px; }
+  .bottom-links .bottom-right-side figure {
+    margin-bottom: 80px; }
+    .bottom-links .bottom-right-side figure img {
+      max-width: 238px; }
+  .bottom-links .bottom-right-side p {
+    font-size: 1.4rem;
+    margin: 0; }
+  .bottom-links .bottom-right-side a {
+    color: #000000;
+    font-size: 1.3rem; }
+  .bottom-links .bottom-right-side a.mail {
+    text-align: right;
+    display: block;
+    padding-right: 8px; }
+
+@media (min-width: 992px) {
+  .bottom-links {
+    background: linear-gradient(to right, #061D44 60%, #ececec 40%);
+    max-height: 281px;
+    padding: 39px 10px 26px; } }
 
 /*# sourceMappingURL=theme.css.map */
