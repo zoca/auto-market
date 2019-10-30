@@ -16,6 +16,7 @@ $right-links-color: $font-color;
       li {
         a {
           color: $bottom-links-color;
+          font-size: 1.3rem;
         }
       }
     }
@@ -67,7 +68,14 @@ $right-links-color: $font-color;
   .bottom-links {
     .bottom-links-item {
       border-left: 0.5px solid $bottom-border-color;
-      
+      ul {
+        li {
+          a {
+            color: $bottom-links-color;
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
   }
 }
@@ -86,6 +94,15 @@ $right-links-color: $font-color;
 
       &.no-border-l{
         border-left: 0px;
+      }
+
+      ul {
+        li {
+          a {
+            color: $bottom-links-color;
+            font-size: 1.6rem;
+          }
+        }
       }
     }
   }

@@ -83,7 +83,45 @@ $(document).ready(function () {
         });
     }
 
+      // log-in validate
 
+      if ($('.log-in-form')) {
+        $('.log-in-form').validate({
+            highlight: function (element) {
+                $(element).addClass('is-invalid').removeClass('is-valid');
+            },
+            unhighlight: function (element) {
+                $(element).addClass('is-valid').removeClass('is-invalid');
+            },
+            rules: {
+                userName: {
+                    required: true,
+                    minlength: 3
+                },
+                password: {
+                    required: true,
+                    minlength: 6
+                }
+            },
+            messages: {
+                userName: {
+                    required: 'Ovo polje je obavezno.',
+                    minlength: 'Morate uneti minimum 3 karaktera.'
+                },
+                password: {
+                    required: 'Ovo polje je obavezno.',
+                    minlength: 'Morate uneti minimum 6 karaktera.'
+                }
+            },
+            errorElement: 'p',
+            errorPlacement: function (error, element) {
+                error.appendTo(element.closest(".form-group").find(".error-msg"));
+            }
+
+        });
+    }
+
+    
 
     //ANIMATION
     function animation() {

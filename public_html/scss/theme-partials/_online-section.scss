@@ -35,6 +35,9 @@ $text-btn-color: $base-link-color;
             background-color: $online-btn-bg;
             color: $text-btn-color;
             padding:  5px 15px;
+            &:hover {
+              background: rgba(6, 29, 68, 0.8);
+            }
         }
     }
 
