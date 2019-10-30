@@ -116,13 +116,13 @@ and open the template in the editor.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase no-border-l" href="#">katalog</a>
+                            <a class="nav-link text-uppercase no-border-l active" href="#">katalog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-nowrap text-uppercase" href="o-nama.html">o nama</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase active" href="vesti.html">vesti</a>
+                            <a class="nav-link text-uppercase" href="vesti.html">vesti</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="#">zaposlenje</a>
@@ -150,44 +150,56 @@ and open the template in the editor.
         <!--container end-->
     </header>
     <main>
-        <section class="news">
+        <section class="katalog">
+            <article class="search-box">
+                <div class="container">
+                    <div class="row justify-content-md-between">
+                        <div class="col-12 col-md-9 col-lg-8">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><input class="form-control" type="text" name="sifra" data-target=".sifra"
+                                                value="" placeholder="Šifra ili kataloški broj">
+                                        </td>
+                                        <td>
+                                            <select name="brend" data-target=".brend">
+                                                <option value="">Brend</option>
+                                                <option value="1">Brend1</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="proizvod" data-target=".proizvod">
+                                                <option value="">Proizvod</option>
+                                                <option value="1">Proizvod1</option>
+                                            </select>
+                                        </td>
+                                        <td><input class="form-control" type="text" name="naziv" data-target=".naziv"
+                                                value="" placeholder="Naziv proizvoda">
+                                        </td>
+                                        <td>
+                                            <label>
+                                            <input class="form-control" type="radio" name="akcije" data-target=".akcije"
+                                                value="akcije">Akcije
+                                            </label>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12 col-md-2 col-lg-2">
+                            <form action="" method="post">
+                                <button class="btn btn-warning" type="submit">TRAŽI<span class="fas fa-search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8">
-                        <article class="news-content">
-                            <h3>Vesti</h3>
-                            <hr class="mb-5">
-                            <p class="d-flex justify-content-between"><span class="text-uppercase">*akcija*</span> <span>20.12.2018. - 20.01.2019.</span>
-                            </p>
-                            <figure>
-                                <img src="img/news/kombinezon.png" alt="">
-                            </figure>
-                            <hr class="mb-4">
-                            <p class="d-flex justify-content-between"><span class="text-uppercase">lokacije</span> <span>20.12.2018. - 20.01.2019.</span>
-                            </p>
-                            <figure>
-                                <img src="img/news/lokacije.png" alt="">
-                            </figure>
-                            <hr class="mb-4">
-                            <p class="d-flex justify-content-between"><span>AutoStarter PROMO</span> <span>20.12.2018. - 20.01.2019.</span></p>
-                            <figure>
-                                <img src="img/news/Mundial_Poster.png" alt="">
-                            </figure>
-                            <hr class="mb-4">
-                            <p class="d-flex justify-content-between"><span class="text-uppercase">b cool</span> <span>20.12.2018. - 20.01.2019.</span></p>
-                            <figure>
-                                <img src="img/news/bcool.png" alt="">
-                            </figure>
-                            <p>U asortimanu Auto Market 011 mozete pronaci kompletne kompresore, delove kompresora
-                                klime, kao i potrošni materijal za punjenje klima sistema u kolima (freon, ulje, boja).
-                            </p>
-                            <p>Za Vas izdvajamo brend BCOOL koji se odlikuje garancijom kvaliteta i veoma velikim asortimanom.</p>
-                            <p>Katalog mozete preuzeti sa sajta Automarket011 na linku ispod ili sa sajta <a href="#">www.automarket011.co.rs.</a></p>
-                            <p><a href="#">http://www.automarket011.co.rs/files/BCOOL-KATALOG%20KLIMA%20DELOVA.pdf</a></p>
-                            <p>Za sve informacije i pitanja stoji Vam na raspolaganju komecijalna sluzba AutoMarket011</p>
-                            <p><a href="tel:011/3471-182">011/3471-182</a></p>
-                            <hr>
-                        </article>
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                    </div>
+                    <div class="col-12 col-lg-3">
                     </div>
                 </div>
                 <!--row end-->

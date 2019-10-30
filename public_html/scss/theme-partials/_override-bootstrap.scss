@@ -4,3 +4,14 @@ html{
 $font-size-base: 1.6rem;
 
 // override bootstrap variables
+
+.btn-warning {
+  color: #212529;
+  background-color: #F2E334;
+  border-color: #F2E334;
+ }
+  .btn-warning:hover {
+    color: #212529;
+    background-color: #F2E334;
+    border-color: #F2E334 
+  }
