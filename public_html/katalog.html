@@ -47,7 +47,7 @@ and open the template in the editor.
                 <div class="navbar login-menu">
                     <ul class="navbar-nav flex-row top-ul ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link no-border-l active" href="prijava.html">Prijava</a>
+                            <a class="nav-link no-border-l" href="prijava.html">Prijava</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Newsletter</a>
@@ -73,7 +73,7 @@ and open the template in the editor.
             <!--top menu end-->
 
             <nav class="navbar navbar-expand-xl navbar-light">
-                <a class="navbar-brand d-flex" href="index.html">
+                <a class="navbar-brand d-flex" href="#">
                     <img src="img/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
@@ -86,7 +86,7 @@ and open the template in the editor.
                     <div class="login-menu d-md-none">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="prijava.html">Prijava</a>
+                                <a class="nav-link" href="prijava.html">Prijava</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Newsletter</a>
@@ -111,8 +111,7 @@ and open the template in the editor.
                     <hr class="d-md-none">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l"
-                                href="index.html">
+                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l" href="index.html">
                                 <img src="img/home.png" alt="">
                             </a>
                         </li>
@@ -123,7 +122,7 @@ and open the template in the editor.
                             <a class="nav-link text-nowrap text-uppercase" href="o-nama.html">o nama</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="vesti.html">vesti</a>
+                            <a class="nav-link text-uppercase active" href="vesti.html">vesti</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="#">zaposlenje</a>
@@ -151,31 +150,43 @@ and open the template in the editor.
         <!--container end-->
     </header>
     <main>
-        <section class="log-in">
+        <section class="news">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <h1 class="log-in-lead-title  text-nowrap">
-                            Prijava na AUTOMARKET011
-                        </h1>
-                        <article class="log-in-content">
-                            <h4 class="log-in-title">prijava</h4>
-                            <div class="d-flex flex-column align-items-center">
-                                <form class="log-in-form" method="GET" action="">
-                                    <div class="form-group">
-                                        <label for="userName">Korisnicko ime:</label>
-                                        <input type="text" class="form-control" name="userName" id="userName">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password">Lozinka:</label>
-                                        <input type="password" name="password" class="form-control" id="password">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                    <button type="submit" class="btn mb-4">Prijava</button>
-                                </form>
-                                <p>Zaboravili ste lozinku?<a href="#">Klik ovde</a></p>
-                            </div>
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <article class="news-content">
+                            <h3>Vesti</h3>
+                            <hr class="mb-5">
+                            <p class="d-flex justify-content-between"><span class="text-uppercase">*akcija*</span> <span>20.12.2018. - 20.01.2019.</span>
+                            </p>
+                            <figure>
+                                <img src="img/news/kombinezon.png" alt="">
+                            </figure>
+                            <hr class="mb-4">
+                            <p class="d-flex justify-content-between"><span class="text-uppercase">lokacije</span> <span>20.12.2018. - 20.01.2019.</span>
+                            </p>
+                            <figure>
+                                <img src="img/news/lokacije.png" alt="">
+                            </figure>
+                            <hr class="mb-4">
+                            <p class="d-flex justify-content-between"><span>AutoStarter PROMO</span> <span>20.12.2018. - 20.01.2019.</span></p>
+                            <figure>
+                                <img src="img/news/Mundial_Poster.png" alt="">
+                            </figure>
+                            <hr class="mb-4">
+                            <p class="d-flex justify-content-between"><span class="text-uppercase">b cool</span> <span>20.12.2018. - 20.01.2019.</span></p>
+                            <figure>
+                                <img src="img/news/bcool.png" alt="">
+                            </figure>
+                            <p>U asortimanu Auto Market 011 mozete pronaci kompletne kompresore, delove kompresora
+                                klime, kao i potrošni materijal za punjenje klima sistema u kolima (freon, ulje, boja).
+                            </p>
+                            <p>Za Vas izdvajamo brend BCOOL koji se odlikuje garancijom kvaliteta i veoma velikim asortimanom.</p>
+                            <p>Katalog mozete preuzeti sa sajta Automarket011 na linku ispod ili sa sajta <a href="#">www.automarket011.co.rs.</a></p>
+                            <p><a href="#">http://www.automarket011.co.rs/files/BCOOL-KATALOG%20KLIMA%20DELOVA.pdf</a></p>
+                            <p>Za sve informacije i pitanja stoji Vam na raspolaganju komecijalna sluzba AutoMarket011</p>
+                            <p><a href="tel:011/3471-182">011/3471-182</a></p>
+                            <hr>
                         </article>
                     </div>
                 </div>
@@ -183,7 +194,7 @@ and open the template in the editor.
             </div>
             <!--container end-->
         </section>
-        <!--log-in section end-->
+        <!--section about-us end-->
         <section class="bottom-links">
             <div class="container">
                 <div class="row no-gutters">

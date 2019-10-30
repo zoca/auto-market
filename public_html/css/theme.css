@@ -7990,5 +7990,28 @@ footer {
     padding: 57px 0; }
     .about-us p {
       margin-bottom: 20px; } }
+.news {
+  padding: 40px 0; }
+  .news h3 {
+    font-family: "HelveticaNeue-Bold"; }
+  .news hr {
+    border-top: 1px solid #979797; }
+  .news p {
+    margin-bottom: 15px; }
+    .news p span:first-child {
+      font-family: "HelveticaNeue-Bold"; }
+    .news p span:last-child {
+      font-size: 1.2rem; }
+    .news p a {
+      color: #000000; }
+
+@media (min-width: 768px) {
+  .news {
+    padding: 57px 0; }
+    .news p span:last-child {
+      font-size: 1.6rem; } }
+@media (min-width: 992px) {
+  .news {
+    padding: 67px 0 60px; } }
 
 /*# sourceMappingURL=theme.css.map */
