@@ -47,22 +47,22 @@ and open the template in the editor.
                 <div class="navbar login-menu">
                     <ul class="navbar-nav flex-row top-ul ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Prijava</a>
+                            <a class="nav-link no-border-l" href="#">Prijava</a>
                         </li>
-                        <li class="nav-item divider">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Newsletter</a>
                         </li>
-                        <li class="nav-item divider">
+                        <li class="nav-item">
                             <a class="nav-link" href="#">Moja korpa</a>
                         </li>
-                        <li class="nav-item disabled">
-                            <a class="nav-link" href="#">Artikala: 0 Iznosi: 0.0</a>
+                        <li class="nav-item">
+                            <p class="article-sum pl-4">Artikala: 0 Iznosi: 0.0</p>
                         </li>
                     </ul>
 
                     <ul class="navbar-nav cart-login ml-auto">
                         <li class="nav-item cart-icon">
-                            <a class="nav-link text-uppercase" href="#">
+                            <a class="nav-link text-uppercase no-hover" href="#">
                                 <img src="img/icon.png" alt="">
                                 login e-shop</a>
                         </li>
@@ -94,14 +94,14 @@ and open the template in the editor.
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Moja korpa</a>
                             </li>
-                            <li class="nav-item disabled">
-                                <a class="nav-link" href="#">Artikala: 0 Iznosi: 0.0</a>
+                            <li class="nav-item">
+                                <p class="article-sum pl-4">Artikala: 0 Iznosi: 0.0</p>
                             </li>
                         </ul>
 
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item cart-icon">
-                                <a class="nav-link text-uppercase" href="#">
+                                <a class="nav-link text-uppercase no-hover" href="#">
                                     <img src="img/icon.png" alt="">
                                     login e-shop</a>
                             </li>
@@ -111,8 +111,12 @@ and open the template in the editor.
                     <hr class="d-md-none">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link active text-uppercase" href="#">katalog <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link text-nowrap text-uppercase active home-icon no-border-l" href="index.html">
+                                <img src="img/home.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase no-border-l" href="#">katalog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-nowrap text-uppercase" href="#">o nama</a>
@@ -179,13 +183,13 @@ and open the template in the editor.
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-4 mb-4">
-                        <article class="online-item">
+                        <article class="online-item animation" data-animation="slide-bottom" data-delay="0s">
                             <figure class="online-img">
                                 <img src="img/online-section/online-1.png" alt="">
                             </figure>
                             <div class="online-content">
                                 <h3 class="text-uppercase">online help</h3>
-                                <a class="mb-2 text-uppercase" href="#">talk to operator</a>
+                                <a class="mb-2 text-uppercase" href="skype:automarket011?call">talk to operator</a>
                                 <p>
                                     Contact us by Skype. One of our operators will be happy to give you all information
                                     about our services and products. Our e-mail address: kmselek@eunet.rs
@@ -194,23 +198,24 @@ and open the template in the editor.
                         </article>
                     </div><!-- col end-->
                     <div class="col-12 col-md-4 mb-4">
-                        <article class="online-item">
+                        <article class="online-item animation" data-animation="slide-bottom" data-delay="0.2s">
                             <figure class="online-img">
                                 <img src="img/online-section/online-2.png" alt="">
                             </figure>
                             <div class="online-content">
-                                <a class="mb-2 text-uppercase" href="#">na stanju</a>
+                                <p class="mb-2 text-uppercase">na stanju</p>
                             </div>
                         </article>
                     </div><!-- col end-->
                     <div class="col-12 col-md-4">
-                        <aside class="online-item">
+                        <aside class="online-item animation" data-animation="slide-bottom" data-delay="0.4s">
                             <div class="online-content">
                                 <h3 class="text-uppercase">newsletter</h3>
                                 <p>Prijavite se na mailing listu</p>
                                 <form class="contact-form" action="" method="GET">
                                     <div class="input-group mb-3">
-                                        <input type="email" class="form-control" name="email">
+                                        <input type="email" class="form-control" name="email"
+                                            placeholder="Upišite E-mail adresu">
                                         <div class="input-group-append">
                                             <button class="btn btn-outline-secondary" type="submit">Pošalji</button>
                                         </div>
@@ -330,20 +335,24 @@ and open the template in the editor.
         <!--clients slider end-->
         <section class="bottom-links">
             <div class="container">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-12 col-md-6 col-lg-2">
-                        <article class="bottom-links-item">
+                        <article class="bottom-links-item no-border-l h-100 animation" data-animation="slide-right"
+                            data-delay="0.9s">
                             <ul class="list-unstyled">
                                 <li><a href="#">as poljska</a></li>
                                 <li><a href="#">auto pulley</a></li>
                                 <li><a href="#">auto starter</a></li>
                                 <li><a href="#">ava</a></li>
                                 <li><a href="#">b cool</a></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <article class="bottom-links-item">
+                        <article class="bottom-links-item h-100 animation" data-animation="slide-right"
+                            data-delay="0.6s">
                             <ul class="list-unstyled">
                                 <li><a href="#">black horse</a></li>
                                 <li><a href="#">bosch</a></li>
@@ -356,7 +365,8 @@ and open the template in the editor.
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <article class="bottom-links-item">
+                        <article class="bottom-links-item h-100 animation" data-animation="slide-right"
+                            data-delay="0.3s">
                             <ul class="list-unstyled">
                                 <li><a href="#">era</a></li>
                                 <li><a href="#">euro klima</a></li>
@@ -370,7 +380,7 @@ and open the template in the editor.
                         </article>
                     </div>
                     <div class="col-12 col-md-6 col-lg-2">
-                        <article class="bottom-links-item">
+                        <article class="bottom-links-item h-100 animation" data-animation="slide-right" data-delay="0s">
                             <ul class="list-unstyled">
                                 <li><a href="#">ka-germany</a></li>
                                 <li><a href="#">ina</a></li>
@@ -383,20 +393,27 @@ and open the template in the editor.
                         </article>
                     </div>
                     <div class="col-12 col-lg-4">
-                        <aside class="bottom-right-side">
+                        <aside
+                            class="bottom-right-side d-sm-flex flex-sm-column align-items-sm-center align-items-lg-end">
                             <figure>
                                 <img src="img/logo.png" alt="">
                             </figure>
                             <p>Beograd, Voždovac, Ustanička 128b</p>
-                            <p>T. <a href="tel:+381 11 3471-182" class="pr-2">+381 11 3471-182</a><a href="tel:+381 11 3471-184">+381 11 3471-184</a></p>
+                            <p>T. <a href="tel:+381 11 3471-182" class="pr-2">+381 11 3471-182</a><a
+                                    href="tel:+381 11 3471-184">+381 11 3471-184</a></p>
                             <a class="mail" href="mailto:office@automarket011.co.rs">office@automarket011.co.rs</a>
-                        </aside>                        
+                        </aside>
                     </div>
                 </div><!-- row end-->
             </div>
             <!--container end-->
         </section><!-- bottom-links end-->
     </main>
+    <footer>
+        <div class="container">
+            <p>Copyright &copy; KMS d.o.o. 2012 Sva prava zadržana Design by FerentzDeveloped by Web Solutions</p>
+        </div>
+    </footer>
 
 
 

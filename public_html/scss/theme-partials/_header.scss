@@ -6,19 +6,23 @@ header {
   background-color: $header-background;
   padding: 10px 0 8px;
 
-  .top-menu {
-    .login-menu {
-      .nav-item {
-        .nav-link {
-          color: $header-color;
-          &.active, &:hover{
-            border-bottom: 1px solid $header-color;
-          }
-
+  .login-menu {
+    .nav-item {
+      .nav-link {
+        color: $header-color;
+        border-bottom: 1px solid transparent;
+        &.active,
+        &:not(.no-hover):hover {
+          border-bottom: 1px solid $header-color;
         }
       }
+      .article-sum {
+        color: $header-color;
+        border-bottom: 1px solid transparent;
+        padding-top: 6px;
+      }
     }
-  } // top menu end
+  } // login-menu end
 
   .navbar {
     a {
@@ -34,10 +38,19 @@ header {
           height: 18px;
         }
       }
-    }// cart-icon end
+
+      a {
+        &.home-icon {
+          img {
+            width: 18px;
+            height: 20px;
+          }
+        }
+      }
+    } // navbar-nav end
 
     hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.6);
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
     }
     .main-menu {
       .nav-item {
@@ -47,6 +60,12 @@ header {
           font-size: 1.4rem;
           line-height: 1.6rem;
           letter-spacing: 1px;
+          border-bottom: 1px solid transparent;
+
+          &.active,
+          &:not(.no-hover):hover {
+            border-bottom: 1px solid $header-color;
+          }
         }
       }
     } // main menu end
@@ -85,10 +104,10 @@ header {
     .login-menu {
       .top-ul {
         .nav-link {
-          &::before {
+          &:not(.no-border-l)::before {
             content: "|";
             color: $header-color;
-            margin: 0 3px;
+            margin: 0 5px;
           }
         }
       }
@@ -107,7 +126,7 @@ header {
   .main-menu {
     .nav-item {
       .nav-link {
-        &::before {
+        &:not(.no-border-l)::before {
           content: "|";
           color: $header-color;
           margin-right: 5px;

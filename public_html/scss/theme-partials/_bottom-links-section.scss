@@ -12,8 +12,12 @@ $right-links-color: $font-color;
     text-transform: uppercase;
     border-bottom: 0.5px solid $bottom-border-color;
 
-    ul li a {
-      color: $bottom-links-color;
+    ul {
+      li {
+        a {
+          color: $bottom-links-color;
+        }
+      }
     }
   }
 
@@ -21,8 +25,9 @@ $right-links-color: $font-color;
     background-color: $right-bg-color;
     padding: 20px 25px;
 
+
     figure {
-        margin-bottom: 80px;
+      margin-bottom: 80px;
       img {
         max-width: 238px;
       }
@@ -36,20 +41,69 @@ $right-links-color: $font-color;
     a {
       color: $right-links-color;
       font-size: 1.3rem;
-    }
 
-    a.mail {
-      text-align: right;
-      display: block;
-      padding-right: 8px;
+      &.mail {
+        text-align: right;
+        display: block;
+        padding-right: 8px;
+      }
+
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media(min-width:576px){
+  .bottom-right-side {
+    a.mail{
+        padding-left: 73px;
+    }
+  }
+}
+
+@media(min-width:768px){
+  .bottom-links {
+    .bottom-links-item {
+      border-left: 0.5px solid $bottom-border-color;
+      
     }
   }
 }
 
 @media (min-width: 992px) {
   .bottom-links {
-    background: linear-gradient(to right, $left-bg-color 60%, $right-bg-color 40%);
+    background: linear-gradient(to right, $left-bg-color 65%, $right-bg-color 35%);
     max-height: 281px;
     padding: 39px 10px 26px;
+
+    .bottom-links-item {
+      text-align: left;
+      background-color: transparent;
+      border-bottom: 0px;
+      padding-left: 30px;
+
+      &.no-border-l{
+        border-left: 0px;
+      }
+    }
   }
 }
+
+@media(min-width:1200px){
+  .bottom-links {
+    background: linear-gradient(to right, $left-bg-color 65%, $right-bg-color 3%);
+    .bottom-links-item {
+      border-left: 0.5px solid $bottom-border-color;
+      
+    }
+
+    .bottom-right-side {
+      background-color: transparent;
+      padding: 0px;
+    }
+  
+  }
+}
+
