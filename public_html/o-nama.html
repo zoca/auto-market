@@ -47,7 +47,7 @@ and open the template in the editor.
                 <div class="navbar login-menu">
                     <ul class="navbar-nav flex-row top-ul ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link no-border-l active" href="prijava.html">Prijava</a>
+                            <a class="nav-link no-border-l" href="prijava.html">Prijava</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Newsletter</a>
@@ -73,7 +73,7 @@ and open the template in the editor.
             <!--top menu end-->
 
             <nav class="navbar navbar-expand-xl navbar-light">
-                <a class="navbar-brand d-flex" href="index.html">
+                <a class="navbar-brand d-flex" href="#">
                     <img src="img/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
@@ -86,7 +86,7 @@ and open the template in the editor.
                     <div class="login-menu d-md-none">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="prijava.html">Prijava</a>
+                                <a class="nav-link" href="prijava.html">Prijava</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Newsletter</a>
@@ -111,8 +111,7 @@ and open the template in the editor.
                     <hr class="d-md-none">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l"
-                                href="index.html">
+                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l" href="index.html">
                                 <img src="img/home.png" alt="">
                             </a>
                         </li>
@@ -120,7 +119,7 @@ and open the template in the editor.
                             <a class="nav-link text-uppercase no-border-l" href="#">katalog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap text-uppercase" href="o-nama.html">o nama</a>
+                            <a class="nav-link text-nowrap text-uppercase active" href="o-nama.html">o nama</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="#">vesti</a>
@@ -151,39 +150,69 @@ and open the template in the editor.
         <!--container end-->
     </header>
     <main>
-        <section class="log-in">
+        <section class="about-us">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 col-lg-6">
-                        <h1 class="log-in-lead-title  text-nowrap">
-                            Prijava na AUTOMARKET011
-                        </h1>
-                        <article class="log-in-content">
-                            <h4 class="log-in-title">prijava</h4>
-                            <div class="d-flex flex-column align-items-center">
-                                <form class="log-in-form" method="GET" action="">
-                                    <div class="form-group">
-                                        <label for="userName">Korisnicko ime:</label>
-                                        <input type="text" class="form-control" name="userName" id="userName">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password">Lozinka:</label>
-                                        <input type="password" name="password" class="form-control" id="password">
-                                        <div class="error-msg"></div>
-                                    </div>
-                                    <button type="submit" class="btn mb-4">Prijava</button>
-                                </form>
-                                <p>Zaboravili ste lozinku?<a href="#">Klik ovde</a></p>
-                            </div>
+                    <div class="col-12 col-md-10 col-lg-8">
+                        <article class="about-us-content">
+                            <h2>O nama</h2>
+                            <hr class="mb-5">
+                            <h5 class="mb-5">AUTO MARKET 011 d.o.o.</h5>
+                            <p>Preduzeće AUTO MARKET 011 d.o.o. Beograd osnovano je 2008. godine kao ćerka firma
+                                preduzeća
+                                KMS d.o.o. Beograd.</p>
+                            <p><a href="http://www.k-m-s.co.rs/">http://www.k-m-s.co.rs/</a></p>
+                            <p>Preduzeće se bavi veleprodajom i maloprodajom rezervnih delova usko specijalizovano na
+                                oblast
+                                auto elektrike za putnički program.</p>
+                            <p>U našem prodajnom asortimanu mozete pronaci širok spektar delova alternatora,anlasera kao
+                                i
+                                kompletnih agregata.</p>
+                            <p>Opredeljeni smo za direktnu saradnju sa servisima koji čine 90% nasih kupaca.</p>
+                            <p>Auto Market 011 je uvoznik renomiranih brendova iz celog sveta.Od firmi sa kojima
+                                saradjujemo
+                                izdvajamo</p>
+                            <ul>
+                                <li><span>ERA</span>-Italija</li>
+                                <li><span>ZEN</span>-Brazil</li>
+                                <li><span>ZM</span>-Brazil</li>
+                                <li><span>Bosch</span>-Nemacka</li>
+                                <li><span>INA</span>-Nemačka</li>
+                                <li><span>Delco Remy</span>-Madjarska</li>
+                                <li><span>AS-PL</span>-Poljska</li>
+                                <li><span>Messmer</span>-Nemacka</li>
+                                <li><span>Mobiletron</span>-Velika Britanija</li>
+                                <li><span>IKA-GEBE</span>-Nemacka</li>
+                                <li><span>ORME</span>-Italija</li>
+                                <li><span>NTN</span>-Japan</li>
+                            </ul>
+                            <p>U nasoj ponudi mozete pronaci kompresore,delove kompresora kao i potrosni program vezan
+                                za
+                                automobilske klima uredjaje.Saradjujemo sa priznatim firmama u Evropi i za Vas izdvajamo
+                            </p>
+                            <ul class="mb-5">
+                                <li><span>AVA</span>-Italija</li>
+                                <li><span>FRIGAIR</span>-Italija</li>
+                                <li><span>KRIOS</span>-Italija</li>
+                                <li><span>MESSER</span>-Austrija</li>
+                                <li><span>WAECO</span>-Nemačka</li>
+                            </ul>
+                            <h5 class="mb-4">POSLOVNA JEDINICA NOVI BEOGRAD-ZEMUN</h5>
+                            <figure class="mb-5">
+                                <img src="img/o-nama.png" alt="">
+                            </figure>
+                            <h5 class="mb-4">TC TOSIN BUNAR</h5>
+                            <p>Ul.Tosin Bunar 188 lok 12,13,14</p>
+                            <p>Radno vreme :</p>
+                            <p>Radnim danom : 09-17, subotom : 09-13</p>
+                            <p>Za sve informacije obratite se na broj telefona:</p>
+                            <p><a href="tel:011/2602-392">011/2602-392</a>, <a href="tel:064/6456-808">064/6456-808</a>
+                            </p>
                         </article>
                     </div>
-                </div>
-                <!--row end-->
-            </div>
-            <!--container end-->
-        </section>
-        <!--log-in section end-->
+                </div><!--row end-->
+            </div><!--container end-->
+        </section><!--section about-us end-->
         <section class="bottom-links">
             <div class="container">
                 <div class="row no-gutters">

@@ -6,6 +6,10 @@ header {
   background-color: $header-background;
   padding: 10px 0 8px;
 
+  .bold{
+    font-family: $helvetica-bold;
+  }
+
   .login-menu {
     .nav-item {
       .nav-link {
