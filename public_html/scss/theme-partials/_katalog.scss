@@ -1,5 +1,7 @@
 $search-box-bg: #d2d2d2;
 $pagination-bg: #ececec;
+$thead-bg: $background-color;
+$th-text-color: #fff;
 
 .katalog {
   .search-box {
@@ -106,12 +108,110 @@ $pagination-bg: #ececec;
         }
       }
     }
-  }
+  } // section katalog-pagination
+
+  .katalog-table {
+    table {
+      thead {
+        background-color: $thead-bg;
+        color: $th-text-color;
+        line-height: 2.2rem;
+        text-align: center;
+        th {
+          height: 34px;
+          padding: 3px 13px;
+          font-size: 1.3rem;
+        }
+      } // thead end
+      tbody {
+        td {
+          text-align: center;
+          padding: 3px 13px;
+          font-size: 1.3rem;
+
+          a {
+            color: #bd0825;
+          }
+
+          .span-logo {
+            height: 34px;
+            padding: 4px 24px;
+            border: 1px solid #000;
+            border-radius: 20px;
+          } // span-logo end
+
+          &.n-proizvoda {
+            padding: 3px 0 3px 3px;
+            font-family: $helvetica-bold;
+            text-align: left;
+          } // n-proizvoda end
+
+          &.span-and-img {
+            padding: 0px;
+            span {
+              display: inline-block;
+              height: 24px;
+              width: 60px;
+              background-color: #fff;
+            }
+
+            img {
+              width: 18px;
+              height: 18px;
+              padding-left: 3px;
+            }
+          } //span-and-img end
+
+          &.red-green-bullet {
+            span {
+              display: inline-block;
+              width: 12px;
+              height: 12px;
+              border: 1px solid #bd0825;
+              border-radius: 50%;
+              background-color: #bd0825;
+
+              &.active {
+                border: 1px solid #00c340;
+                background-color: #00c340;
+              }
+            }
+          } // red-greeb-bullet end
+        } //td end
+      } //tbody end
+    } // table end
+
+    .katalog-img-section {
+      .katalog-img {
+          padding-top: 5px;
+        figcaption {
+          background-color: $thead-bg;
+          height: 32px;
+          color: $th-text-color;
+          text-align: center;
+          padding-top: 3px;
+        }
+
+        img {
+          border: 1px solid #979797;
+          width: 100%;
+        }
+      }
+
+      .naziv-proizvoda{
+          font-family: $helvetica-bold;
+      }
+
+      a{
+          color: $font-color;
+      }
+    }
+  } // katalog-table end
 }
 
 @media (min-width: 768px) {
   .katalog-pagination {
-      max-height: 38px;
+    max-height: 38px;
     .pagination {
       padding-left: 44px;
     }
@@ -119,7 +219,10 @@ $pagination-bg: #ececec;
 }
 
 @media (min-width: 992px) {
-    .search-box {
-        max-height: 40px;
-    }
+  .search-box {
+    max-height: 40px;
+  }
+}
+
+@media(min-width:1200px){
 }

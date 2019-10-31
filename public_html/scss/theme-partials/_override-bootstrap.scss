@@ -15,4 +15,17 @@ $font-size-base: 1.6rem;
     background-color: #F2E334;
     border-color: #F2E334 
   }
+
+  .table-striped tbody tr{
+    background-color: #D2D2D2;
+  }
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ECECEC;
+   }
+
+   .table-bordered {
+    border: 3px solid #FFFFFF; }
+    .table-bordered th,
+    .table-bordered td {
+      border: 3px solid #FFFFFF; }
    

@@ -7603,6 +7603,19 @@ html {
   background-color: #F2E334;
   border-color: #F2E334; }
 
+.table-striped tbody tr {
+  background-color: #D2D2D2; }
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #ECECEC; }
+
+.table-bordered {
+  border: 3px solid #FFFFFF; }
+
+.table-bordered th,
+.table-bordered td {
+  border: 3px solid #FFFFFF; }
+
 @font-face {
   font-family: "HelveticaNeue-Bold";
   src: url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.otf") format("opentype"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff") format("woff"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf") format("truetype"), url("fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
@@ -8093,6 +8106,66 @@ footer {
         padding-left: 2px; }
     .katalog .katalog-pagination .pagination .page-link .fa-angle-right::before {
       padding-left: 4px; }
+.katalog .katalog-table table thead {
+  background-color: #061d44;
+  color: #fff;
+  line-height: 2.2rem;
+  text-align: center; }
+  .katalog .katalog-table table thead th {
+    height: 34px;
+    padding: 3px 13px;
+    font-size: 1.3rem; }
+.katalog .katalog-table table tbody td {
+  text-align: center;
+  padding: 3px 13px;
+  font-size: 1.3rem; }
+  .katalog .katalog-table table tbody td a {
+    color: #bd0825; }
+  .katalog .katalog-table table tbody td .span-logo {
+    height: 34px;
+    padding: 4px 24px;
+    border: 1px solid #000;
+    border-radius: 20px; }
+  .katalog .katalog-table table tbody td.n-proizvoda {
+    padding: 3px 0 3px 3px;
+    font-family: "HelveticaNeue-Bold";
+    text-align: left; }
+  .katalog .katalog-table table tbody td.span-and-img {
+    padding: 0px; }
+    .katalog .katalog-table table tbody td.span-and-img span {
+      display: inline-block;
+      height: 24px;
+      width: 60px;
+      background-color: #fff; }
+    .katalog .katalog-table table tbody td.span-and-img img {
+      width: 18px;
+      height: 18px;
+      padding-left: 3px; }
+  .katalog .katalog-table table tbody td.red-green-bullet span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #bd0825;
+    border-radius: 50%;
+    background-color: #bd0825; }
+    .katalog .katalog-table table tbody td.red-green-bullet span.active {
+      border: 1px solid #00c340;
+      background-color: #00c340; }
+.katalog .katalog-table .katalog-img-section .katalog-img {
+  padding-top: 5px; }
+  .katalog .katalog-table .katalog-img-section .katalog-img figcaption {
+    background-color: #061d44;
+    height: 32px;
+    color: #fff;
+    text-align: center;
+    padding-top: 3px; }
+  .katalog .katalog-table .katalog-img-section .katalog-img img {
+    border: 1px solid #979797;
+    width: 100%; }
+.katalog .katalog-table .katalog-img-section .naziv-proizvoda {
+  font-family: "HelveticaNeue-Bold"; }
+.katalog .katalog-table .katalog-img-section a {
+  color: #000000; }
 
 @media (min-width: 768px) {
   .katalog-pagination {
