@@ -77,7 +77,7 @@ $(document).ready(function () {
             },
             errorElement: 'p',
             errorPlacement: function (error, element) {
-                error.appendTo(element.closest(".input-group").find(".error-msg"));
+                error.appendTo(element.closest(".form-group").find(".error-msg"));
             }
 
         });

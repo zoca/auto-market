@@ -1,15 +1,17 @@
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-$background-color: #061D44;
-$base-link-color: #FFFFFF;
+$background-color: #061d44;
+$base-link-color: #ffffff;
 
 $font-color: #000000;
 
 $font-bold: $helvetica-bold;
 
- body{
-     color: $font-color;
-     font-family: $helvetica-regular;
- }
+body {
+  color: $font-color;
+  font-family: $helvetica-regular;
+  font-size: $font-size-base;
+}
+ 

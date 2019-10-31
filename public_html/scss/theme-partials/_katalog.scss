@@ -1,7 +1,75 @@
-$search-box-bg: #D2D2D2;
+$search-box-bg: #d2d2d2;
 
-.katalog{
-    .search-box{
-        background-color: $search-box-bg;
+.katalog {
+  .search-box {
+    padding: 7px 0;
+    background-color: $search-box-bg;
+
+    .form-control {
+      padding: 5px 0 5px 8px;
+      width: 160px;
+      height: 30px;
+
+      &[type="radio"] {
+        display: none;
+      }
+
+      &[type="radio"]:checked + .fake-radio {
+        background-color: #000;
+      }
+
+      &::placeholder{
+          font-size: 1.4rem;
+      }
     }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-app-appearance: none;
+      background: #fff url("../img/arrow.png") no-repeat 96% center;
+      font-size: 1.4rem;
+      background-size: 10px;
+    }
+
+    .fake-radio {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      background-color: $search-box-bg;
+    }
+
+    .akcije {
+      font-size: 1.4rem;
+    }
+
+    .trazi {
+      padding-right: 5px;
+      width: 122px;
+      height: 30px;
+      font-size: 1.4rem;
+    }
+
+    .fa-search {
+      height: 30px;
+      width: 36px;
+      line-height: 30px;
+      background: #f2e334;
+      border-left: 1px solid $search-box-bg;
+
+      &::before {
+        padding-left: 9px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .katalog {
+    .search-box {
+    }
+  }
 }

@@ -60,7 +60,7 @@ and open the template in the editor.
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav cart-login ml-auto">
+                    <ul class="navbar-nav cart-login ml-4">
                         <li class="nav-item cart-icon">
                             <a class="nav-link text-uppercase no-hover bold" href="#">
                                 <img src="img/icon.png" alt="">
@@ -99,7 +99,7 @@ and open the template in the editor.
                             </li>
                         </ul>
 
-                        <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav">
                             <li class="nav-item cart-icon">
                                 <a class="nav-link text-uppercase no-hover bold" href="#">
                                     <img src="img/icon.png" alt="">
@@ -154,47 +154,48 @@ and open the template in the editor.
             <article class="search-box">
                 <div class="container">
                     <div class="row justify-content-md-between">
-                        <div class="col-12 col-md-9 col-lg-8">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td><input class="form-control" type="text" name="sifra" data-target=".sifra"
-                                                value="" placeholder="Šifra ili kataloški broj">
-                                        </td>
-                                        <td>
-                                            <select name="brend" data-target=".brend">
-                                                <option value="">Brend</option>
-                                                <option value="1">Brend1</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <select name="proizvod" data-target=".proizvod">
-                                                <option value="">Proizvod</option>
-                                                <option value="1">Proizvod1</option>
-                                            </select>
-                                        </td>
-                                        <td><input class="form-control" type="text" name="naziv" data-target=".naziv"
-                                                value="" placeholder="Naziv proizvoda">
-                                        </td>
-                                        <td>
-                                            <label>
-                                            <input class="form-control" type="radio" name="akcije" data-target=".akcije"
-                                                value="akcije">Akcije
-                                            </label>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="form-group d-flex justify-content-between no-gutters">
+                                <input class="form-control" type="text" name="sifra" value=""
+                                    placeholder="Šifra ili kataloški broj">
+                                <select class="form-control" name="brend">
+                                    <option value="">Brend</option>
+                                    <option value="1">Brend1</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-2 col-lg-2">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="form-group d-flex justify-content-between no-gutters">
+                                <select class="form-control" name="proizvod">
+                                    <option value="">Proizvod</option>
+                                    <option value="1">Proizvod1</option>
+                                </select>
+                                <input class="form-control" type="text" name="naziv" value=""
+                                    placeholder="Naziv proizvoda">
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-1 pt-2 pl-lg-4">
+                            <div class="form-group akcije">
+                                <label>
+                                    <input  class="form-control" type="radio" name="akcije" value="akcije">
+                                    <span class="fake-radio"></span>
+                                    Akcije
+                                </label>
+                            </div>
+                        </div>
+                        <!--col end-->
+                        <div class="col-6 col-lg-2 offset-lg-1 pt-2 pt-lg-0">
                             <form action="" method="post">
-                                <button class="btn btn-warning" type="submit">TRAŽI<span class="fas fa-search"></span></button>
+                                <div class="form-group d-flex justify-content-end">
+                                    <button class="btn btn-warning trazi" type="submit">TRAŽI</button>
+                                    <span class="fas fa-search"></span>
+                                </div>
                             </form>
-                        </div>
-                    </div>
-                </div>
+                        </div><!-- col end-->
+                    </div><!-- row end-->
+                </div><!-- container end-->
             </article>
+            <!--saerch-box end-->
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9">
@@ -206,7 +207,7 @@ and open the template in the editor.
             </div>
             <!--container end-->
         </section>
-        <!--section about-us end-->
+        <!--section katalog end-->
         <section class="bottom-links">
             <div class="container">
                 <div class="row no-gutters">
