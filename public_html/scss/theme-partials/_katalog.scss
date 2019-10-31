@@ -39,35 +39,35 @@ $th-text-color: #fff;
         padding-left: 9px;
       }
     }
-  } // search box end
 
-  .form-control {
-    padding: 5px 0 5px 8px;
-    width: 160px;
-    height: 30px;
+    .form-control {
+      padding: 5px 0 5px 8px;
+      width: 160px;
+      height: 30px;
 
-    &[type="radio"] {
-      display: none;
-    }
+      &[type="radio"] {
+        display: none;
+      }
 
-    &[type="radio"]:checked + .fake-radio {
-      background-color: #000;
-    }
+      &[type="radio"]:checked + .fake-radio {
+        background-color: #000;
+      }
 
-    &::placeholder {
+      &::placeholder {
+        font-size: 1.4rem;
+      }
+    } // form control end
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-app-appearance: none;
+      background: #fff url("../img/arrow.png") no-repeat 96% center;
       font-size: 1.4rem;
-    }
-  } // form control end
-
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-app-appearance: none;
-    background: #fff url("../img/arrow.png") no-repeat 96% center;
-    font-size: 1.4rem;
-    background-size: 10px;
-  } // select end
+      background-size: 10px;
+    } // select end
+  } // search box end
 
   .katalog-pagination {
     padding: 5px 0;
@@ -108,105 +108,23 @@ $th-text-color: #fff;
         }
       }
     }
+
+    .form-control {
+      padding: 5px 0 5px 8px;
+      width: 160px;
+      height: 30px;
+    } // form control end
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-app-appearance: none;
+      background: #fff url("../img/arrow.png") no-repeat 96% center;
+      font-size: 1.4rem;
+      background-size: 10px;
+    } // select end
   } // section katalog-pagination
-
-  .katalog-table {
-    table {
-      thead {
-        background-color: $thead-bg;
-        color: $th-text-color;
-        line-height: 2.2rem;
-        text-align: center;
-        th {
-          height: 34px;
-          padding: 3px 13px;
-          font-size: 1.3rem;
-        }
-      } // thead end
-      tbody {
-        td {
-          text-align: center;
-          padding: 3px 13px;
-          font-size: 1.3rem;
-
-          a {
-            color: #bd0825;
-          }
-
-          .span-logo {
-            height: 34px;
-            padding: 4px 24px;
-            border: 1px solid #000;
-            border-radius: 20px;
-          } // span-logo end
-
-          &.n-proizvoda {
-            padding: 3px 0 3px 3px;
-            font-family: $helvetica-bold;
-            text-align: left;
-          } // n-proizvoda end
-
-          &.span-and-img {
-            padding: 0px;
-            span {
-              display: inline-block;
-              height: 24px;
-              width: 60px;
-              background-color: #fff;
-            }
-
-            img {
-              width: 18px;
-              height: 18px;
-              padding-left: 3px;
-            }
-          } //span-and-img end
-
-          &.red-green-bullet {
-            span {
-              display: inline-block;
-              width: 12px;
-              height: 12px;
-              border: 1px solid #bd0825;
-              border-radius: 50%;
-              background-color: #bd0825;
-
-              &.active {
-                border: 1px solid #00c340;
-                background-color: #00c340;
-              }
-            }
-          } // red-greeb-bullet end
-        } //td end
-      } //tbody end
-    } // table end
-
-    .katalog-img-section {
-      .katalog-img {
-          padding-top: 5px;
-        figcaption {
-          background-color: $thead-bg;
-          height: 32px;
-          color: $th-text-color;
-          text-align: center;
-          padding-top: 3px;
-        }
-
-        img {
-          border: 1px solid #979797;
-          width: 100%;
-        }
-      }
-
-      .naziv-proizvoda{
-          font-family: $helvetica-bold;
-      }
-
-      a{
-          color: $font-color;
-      }
-    }
-  } // katalog-table end
 }
 
 @media (min-width: 768px) {
@@ -224,5 +142,5 @@ $th-text-color: #fff;
   }
 }
 
-@media(min-width:1200px){
+@media (min-width: 1200px) {
 }

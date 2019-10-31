@@ -8064,24 +8064,24 @@ footer {
     border-left: 1px solid #d2d2d2; }
     .katalog .search-box .fa-search::before {
       padding-left: 9px; }
-.katalog .form-control {
-  padding: 5px 0 5px 8px;
-  width: 160px;
-  height: 30px; }
-  .katalog .form-control[type="radio"] {
-    display: none; }
-  .katalog .form-control[type="radio"]:checked + .fake-radio {
-    background-color: #000; }
-  .katalog .form-control::placeholder {
-    font-size: 1.4rem; }
-.katalog select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-app-appearance: none;
-  background: #fff url("../img/arrow.png") no-repeat 96% center;
-  font-size: 1.4rem;
-  background-size: 10px; }
+  .katalog .search-box .form-control {
+    padding: 5px 0 5px 8px;
+    width: 160px;
+    height: 30px; }
+    .katalog .search-box .form-control[type="radio"] {
+      display: none; }
+    .katalog .search-box .form-control[type="radio"]:checked + .fake-radio {
+      background-color: #000; }
+    .katalog .search-box .form-control::placeholder {
+      font-size: 1.4rem; }
+  .katalog .search-box select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-app-appearance: none;
+    background: #fff url("../img/arrow.png") no-repeat 96% center;
+    font-size: 1.4rem;
+    background-size: 10px; }
 .katalog .katalog-pagination {
   padding: 5px 0;
   background-color: #ececec; }
@@ -8106,66 +8106,18 @@ footer {
         padding-left: 2px; }
     .katalog .katalog-pagination .pagination .page-link .fa-angle-right::before {
       padding-left: 4px; }
-.katalog .katalog-table table thead {
-  background-color: #061d44;
-  color: #fff;
-  line-height: 2.2rem;
-  text-align: center; }
-  .katalog .katalog-table table thead th {
-    height: 34px;
-    padding: 3px 13px;
-    font-size: 1.3rem; }
-.katalog .katalog-table table tbody td {
-  text-align: center;
-  padding: 3px 13px;
-  font-size: 1.3rem; }
-  .katalog .katalog-table table tbody td a {
-    color: #bd0825; }
-  .katalog .katalog-table table tbody td .span-logo {
-    height: 34px;
-    padding: 4px 24px;
-    border: 1px solid #000;
-    border-radius: 20px; }
-  .katalog .katalog-table table tbody td.n-proizvoda {
-    padding: 3px 0 3px 3px;
-    font-family: "HelveticaNeue-Bold";
-    text-align: left; }
-  .katalog .katalog-table table tbody td.span-and-img {
-    padding: 0px; }
-    .katalog .katalog-table table tbody td.span-and-img span {
-      display: inline-block;
-      height: 24px;
-      width: 60px;
-      background-color: #fff; }
-    .katalog .katalog-table table tbody td.span-and-img img {
-      width: 18px;
-      height: 18px;
-      padding-left: 3px; }
-  .katalog .katalog-table table tbody td.red-green-bullet span {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: 1px solid #bd0825;
-    border-radius: 50%;
-    background-color: #bd0825; }
-    .katalog .katalog-table table tbody td.red-green-bullet span.active {
-      border: 1px solid #00c340;
-      background-color: #00c340; }
-.katalog .katalog-table .katalog-img-section .katalog-img {
-  padding-top: 5px; }
-  .katalog .katalog-table .katalog-img-section .katalog-img figcaption {
-    background-color: #061d44;
-    height: 32px;
-    color: #fff;
-    text-align: center;
-    padding-top: 3px; }
-  .katalog .katalog-table .katalog-img-section .katalog-img img {
-    border: 1px solid #979797;
-    width: 100%; }
-.katalog .katalog-table .katalog-img-section .naziv-proizvoda {
-  font-family: "HelveticaNeue-Bold"; }
-.katalog .katalog-table .katalog-img-section a {
-  color: #000000; }
+  .katalog .katalog-pagination .form-control {
+    padding: 5px 0 5px 8px;
+    width: 160px;
+    height: 30px; }
+  .katalog .katalog-pagination select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-app-appearance: none;
+    background: #fff url("../img/arrow.png") no-repeat 96% center;
+    font-size: 1.4rem;
+    background-size: 10px; }
 
 @media (min-width: 768px) {
   .katalog-pagination {
@@ -8175,5 +8127,74 @@ footer {
 @media (min-width: 992px) {
   .search-box {
     max-height: 40px; } }
+.katalog .katalog-table {
+  margin-bottom: 30px; }
+  .katalog .katalog-table table thead {
+    background-color: #061d44;
+    color: #fff;
+    line-height: 2.2rem;
+    text-align: center; }
+    .katalog .katalog-table table thead th {
+      height: 34px;
+      padding: 3px 13px;
+      font-size: 1.3rem; }
+  .katalog .katalog-table table tbody td {
+    text-align: center;
+    padding: 3px 13px;
+    font-size: 1.3rem; }
+    .katalog .katalog-table table tbody td a {
+      color: #bd0825; }
+    .katalog .katalog-table table tbody td .span-logo {
+      height: 34px;
+      padding: 4px 24px;
+      border: 1px solid #000;
+      border-radius: 20px; }
+    .katalog .katalog-table table tbody td.n-proizvoda {
+      padding: 3px 0 3px 3px;
+      font-family: "HelveticaNeue-Bold";
+      text-align: left; }
+    .katalog .katalog-table table tbody td.span-and-img {
+      padding: 0px; }
+      .katalog .katalog-table table tbody td.span-and-img span {
+        display: inline-block;
+        height: 24px;
+        width: 60px;
+        background-color: #fff; }
+      .katalog .katalog-table table tbody td.span-and-img img {
+        width: 18px;
+        height: 18px;
+        padding-left: 3px; }
+    .katalog .katalog-table table tbody td.red-green-bullet span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #bd0825;
+      border-radius: 50%;
+      background-color: #bd0825; }
+      .katalog .katalog-table table tbody td.red-green-bullet span.active {
+        border: 1px solid #00c340;
+        background-color: #00c340; }
+  .katalog .katalog-table .katalog-img-section .katalog-img {
+    padding-top: 5px; }
+    .katalog .katalog-table .katalog-img-section .katalog-img figcaption {
+      background-color: #061d44;
+      height: 32px;
+      color: #fff;
+      text-align: center;
+      padding-top: 3px; }
+    .katalog .katalog-table .katalog-img-section .katalog-img img {
+      border: 1px solid #979797;
+      width: 100%; }
+  .katalog .katalog-table .katalog-img-section .naziv-proizvoda {
+    font-family: "HelveticaNeue-Bold"; }
+  .katalog .katalog-table .katalog-img-section a {
+    color: #000000; }
+
+@media (min-width: 768px) {
+  .katalog .katalog-table {
+    margin-bottom: 60px; } }
+@media (min-width: 992px) {
+  .katalog .katalog-table {
+    margin-bottom: 94px; } }
 
 /*# sourceMappingURL=theme.css.map */
