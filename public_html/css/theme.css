@@ -8029,24 +8029,6 @@ footer {
 .katalog .search-box {
   padding: 7px 0;
   background-color: #d2d2d2; }
-  .katalog .search-box .form-control {
-    padding: 5px 0 5px 8px;
-    width: 160px;
-    height: 30px; }
-    .katalog .search-box .form-control[type="radio"] {
-      display: none; }
-    .katalog .search-box .form-control[type="radio"]:checked + .fake-radio {
-      background-color: #000; }
-    .katalog .search-box .form-control::placeholder {
-      font-size: 1.4rem; }
-  .katalog .search-box select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-app-appearance: none;
-    background: #fff url("../img/arrow.png") no-repeat 96% center;
-    font-size: 1.4rem;
-    background-size: 10px; }
   .katalog .search-box .fake-radio {
     display: inline-block;
     width: 9px;
@@ -8069,5 +8051,56 @@ footer {
     border-left: 1px solid #d2d2d2; }
     .katalog .search-box .fa-search::before {
       padding-left: 9px; }
+.katalog .form-control {
+  padding: 5px 0 5px 8px;
+  width: 160px;
+  height: 30px; }
+  .katalog .form-control[type="radio"] {
+    display: none; }
+  .katalog .form-control[type="radio"]:checked + .fake-radio {
+    background-color: #000; }
+  .katalog .form-control::placeholder {
+    font-size: 1.4rem; }
+.katalog select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-app-appearance: none;
+  background: #fff url("../img/arrow.png") no-repeat 96% center;
+  font-size: 1.4rem;
+  background-size: 10px; }
+.katalog .katalog-pagination {
+  padding: 5px 0;
+  background-color: #ececec; }
+  .katalog .katalog-pagination p {
+    font-size: 1.4rem; }
+  .katalog .katalog-pagination .pagination .page-link {
+    background-color: transparent;
+    border: 0px; }
+    .katalog .katalog-pagination .pagination .page-link.active {
+      font-weight: bold; }
+    .katalog .katalog-pagination .pagination .page-link .fa-angle-right,
+    .katalog .katalog-pagination .pagination .page-link .fa-angle-double-right {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      line-height: 10px;
+      border: 2px solid #000;
+      border-radius: 50%; }
+      .katalog .katalog-pagination .pagination .page-link .fa-angle-right::before,
+      .katalog .katalog-pagination .pagination .page-link .fa-angle-double-right::before {
+        font-size: 1.1rem;
+        padding-left: 2px; }
+    .katalog .katalog-pagination .pagination .page-link .fa-angle-right::before {
+      padding-left: 4px; }
+
+@media (min-width: 768px) {
+  .katalog-pagination {
+    max-height: 38px; }
+    .katalog-pagination .pagination {
+      padding-left: 44px; } }
+@media (min-width: 992px) {
+  .search-box {
+    max-height: 40px; } }
 
 /*# sourceMappingURL=theme.css.map */

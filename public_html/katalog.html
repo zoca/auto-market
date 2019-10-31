@@ -163,7 +163,7 @@ and open the template in the editor.
                                     <option value="1">Brend1</option>
                                 </select>
                             </div>
-                        </div>
+                        </div><!-- col end-->
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="form-group d-flex justify-content-between no-gutters">
                                 <select class="form-control" name="proizvod">
@@ -173,11 +173,11 @@ and open the template in the editor.
                                 <input class="form-control" type="text" name="naziv" value=""
                                     placeholder="Naziv proizvoda">
                             </div>
-                        </div>
+                        </div><!-- col end-->
                         <div class="col-6 col-lg-1 pt-2 pl-lg-4">
                             <div class="form-group akcije">
                                 <label>
-                                    <input  class="form-control" type="radio" name="akcije" value="akcije">
+                                    <input class="form-control" type="radio" name="akcije" value="akcije">
                                     <span class="fake-radio"></span>
                                     Akcije
                                 </label>
@@ -196,16 +196,69 @@ and open the template in the editor.
                 </div><!-- container end-->
             </article>
             <!--saerch-box end-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-9">
+            <article class="katalog-pagination">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <p class="text-uppercase">katalog &raquo; agis zavore</p>
+                        </div>
+                        <!--col end-->
+                        <div class="col-12 col-sm-3">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link active">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="Next">
+                                            <span aria-hidden="true" class="fas fa-angle-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="End">
+                                            <span class="fas fa-angle-double-right"></span>
+                                            <span class="sr-only">End</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--col end-->
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="form-group d-flex  justify-content-end sortiraj">
+                                <label class="pr-2" for="">Sortiraj po</label>
+                                <select class="form-control" name="sortiraj">
+                                    <option value="naziv">Nazivu (asc)</option>
+                                    <option value="cena">Ceni</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--col end-->
                     </div>
-                    <div class="col-12 col-lg-3">
-                    </div>
+                    <!--row end-->
                 </div>
-                <!--row end-->
-            </div>
-            <!--container end-->
+                <!--container end-->
+            </article>
+            <!--paggination end-->
+            <article>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            <table>
+                                <thead>
+                                    <tr>
+
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="col-12 col-lg-3">
+                        </div>
+                    </div>
+                    <!--row end-->
+                </div>
+                <!--container end-->
+            </article>
         </section>
         <!--section katalog end-->
         <section class="bottom-links">

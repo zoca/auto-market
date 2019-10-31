@@ -1,37 +1,10 @@
 $search-box-bg: #d2d2d2;
+$pagination-bg: #ececec;
 
 .katalog {
   .search-box {
     padding: 7px 0;
     background-color: $search-box-bg;
-
-    .form-control {
-      padding: 5px 0 5px 8px;
-      width: 160px;
-      height: 30px;
-
-      &[type="radio"] {
-        display: none;
-      }
-
-      &[type="radio"]:checked + .fake-radio {
-        background-color: #000;
-      }
-
-      &::placeholder{
-          font-size: 1.4rem;
-      }
-    }
-
-    select {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-app-appearance: none;
-      background: #fff url("../img/arrow.png") no-repeat 96% center;
-      font-size: 1.4rem;
-      background-size: 10px;
-    }
 
     .fake-radio {
       display: inline-block;
@@ -64,12 +37,89 @@ $search-box-bg: #d2d2d2;
         padding-left: 9px;
       }
     }
+  } // search box end
+
+  .form-control {
+    padding: 5px 0 5px 8px;
+    width: 160px;
+    height: 30px;
+
+    &[type="radio"] {
+      display: none;
+    }
+
+    &[type="radio"]:checked + .fake-radio {
+      background-color: #000;
+    }
+
+    &::placeholder {
+      font-size: 1.4rem;
+    }
+  } // form control end
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-app-appearance: none;
+    background: #fff url("../img/arrow.png") no-repeat 96% center;
+    font-size: 1.4rem;
+    background-size: 10px;
+  } // select end
+
+  .katalog-pagination {
+    padding: 5px 0;
+    background-color: $pagination-bg;
+
+    p {
+      font-size: 1.4rem;
+    }
+
+    .pagination {
+      .page-link {
+        background-color: transparent;
+        border: 0px;
+
+        &.active {
+          font-weight: bold;
+        }
+
+        .fa-angle-right,
+        .fa-angle-double-right {
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          line-height: 10px;
+          border: 2px solid #000;
+          border-radius: 50%;
+
+          &::before {
+            font-size: 1.1rem;
+            padding-left: 2px;
+          }
+        }
+
+        .fa-angle-right {
+          &::before {
+            padding-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .katalog-pagination {
+      max-height: 38px;
+    .pagination {
+      padding-left: 44px;
+    }
   }
 }
 
 @media (min-width: 992px) {
-  .katalog {
     .search-box {
+        max-height: 40px;
     }
-  }
 }
