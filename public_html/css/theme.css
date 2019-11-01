@@ -8210,5 +8210,79 @@ footer {
 @media (min-width: 992px) {
   .katalog .katalog-table {
     margin-bottom: 94px; } }
+.proizvod .proizvod-content .proizvod-title {
+  font-size: 2rem;
+  font-family: "HelveticaNeue-Bold";
+  line-height: 3rem; }
+.proizvod .proizvod-content .dostupnost-proizvoda span {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #bd0825;
+  border-radius: 50%;
+  background-color: #bd0825; }
+  .proizvod .proizvod-content .dostupnost-proizvoda span.na-stanju {
+    border: 1px solid #00c340;
+    background-color: #00c340; }
+.proizvod .proizvod-content .middle-list {
+  font-family: "HelveticaNeue-Bold";
+  text-transform: uppercase; }
+.proizvod .proizvod-content .right-list a {
+  color: #000000; }
+.proizvod .proizvod-content .bottom-list .b-bottom::after {
+  content: "";
+  height: 1px;
+  width: 120px;
+  background-color: #979797;
+  display: block;
+  position: relative;
+  margin: 5px 0; }
+.proizvod .proizvod-content .bottom-list .cena {
+  font-family: "HelveticaNeue-Bold";
+  font-size: 2.4rem; }
+.proizvod .proizvod-content .bottom-list .kolicina {
+  width: 50px;
+  height: 38px;
+  margin-left: 5px; }
+.proizvod .proizvod-content .bottom-list .popust {
+  width: 40px;
+  height: 36px;
+  margin-left: 100px; }
+.proizvod .proizvod-content .bottom-list .btn-dodaj {
+  width: 160px;
+  height: 45px;
+  background-color: #061d44;
+  color: #ffffff;
+  font-size: 1.6rem; }
+  .proizvod .proizvod-content .bottom-list .btn-dodaj img {
+    height: 18px;
+    width: 18px;
+    padding-right: 5px; }
+.proizvod .card-section {
+  margin-bottom: 60px; }
+  .proizvod .card-section .card-header {
+    width: 152px;
+    height: 34px;
+    background-color: #061d44;
+    color: #ffffff;
+    text-align: center;
+    line-height: normal; }
+  .proizvod .card-section .card {
+    border-color: #979797; }
+    .proizvod .card-section .card .card-body .card-text {
+      margin: 0px; }
+
+@media (min-width: 768px) {
+  .proizvod .proizvod-content .bottom-list .popust {
+    margin-left: 19px; } }
+@media (min-width: 992px) {
+  .proizvod .proizvod-content .middle-list,
+  .proizvod .proizvod-content .right-list {
+    text-align: right; }
+  .proizvod .proizvod-content .bottom-list .popust {
+    margin-left: 88px; } }
+@media (min-width: 1200px) {
+  .proizvod .proizvod-content .bottom-list .popust {
+    margin-left: 139px; } }
 
 /*# sourceMappingURL=theme.css.map */
