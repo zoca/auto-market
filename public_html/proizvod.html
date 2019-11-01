@@ -73,7 +73,7 @@ and open the template in the editor.
             <!--top menu end-->
 
             <nav class="navbar navbar-expand-xl navbar-light">
-                <a class="navbar-brand d-flex" href="#">
+                <a class="navbar-brand d-flex" href="index.html">
                     <img src="img/logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu"
@@ -111,7 +111,8 @@ and open the template in the editor.
                     <hr class="d-md-none">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l" href="index.html">
+                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l no-hover"
+                                href="index.html">
                                 <img src="img/home.png" alt="">
                             </a>
                         </li>
@@ -150,6 +151,98 @@ and open the template in the editor.
         <!--container end-->
     </header>
     <main>
+        <section class="katalog mb-5">
+            <article class="search-box">
+                <div class="container">
+                    <div class="row justify-content-md-between">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="form-group d-flex justify-content-between no-gutters">
+                                <input class="form-control" type="text" name="sifra" value=""
+                                    placeholder="Šifra ili kataloški broj">
+                                <select class="form-control" name="brend">
+                                    <option value="">Brend</option>
+                                    <option value="1">Brend1</option>
+                                </select>
+                            </div>
+                        </div><!-- col end-->
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="form-group d-flex justify-content-between no-gutters">
+                                <select class="form-control" name="proizvod">
+                                    <option value="">Proizvod</option>
+                                    <option value="1">Proizvod1</option>
+                                </select>
+                                <input class="form-control" type="text" name="naziv" value=""
+                                    placeholder="Naziv proizvoda">
+                            </div>
+                        </div><!-- col end-->
+                        <div class="col-6 col-lg-1 pt-2 pl-lg-4">
+                            <div class="form-group akcije">
+                                <label>
+                                    <input class="form-control" type="radio" name="akcije" value="akcije">
+                                    <span class="fake-radio"></span>
+                                    Akcije
+                                </label>
+                            </div>
+                        </div>
+                        <!--col end-->
+                        <div class="col-6 col-lg-2 offset-lg-1 pt-2 pt-lg-0">
+                            <form action="" method="post">
+                                <div class="form-group d-flex justify-content-end">
+                                    <button class="btn btn-warning trazi" type="submit">TRAŽI</button>
+                                    <a href="#"><span class="fas fa-search"></span></a>
+                                </div>
+                            </form>
+                        </div><!-- col end-->
+                    </div><!-- row end-->
+                </div><!-- container end-->
+            </article>
+            <!--saerch-box end-->
+            <article class="katalog-pagination mb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <p class="text-uppercase">katalog &raquo; agis zavore</p>
+                        </div>
+                        <!--col end-->
+                        <div class="col-12 col-sm-3">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link active">1</a></li>
+                                    <li class="page-item"><a class="page-link">2</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="Next">
+                                            <span aria-hidden="true" class="fas fa-angle-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" aria-label="End">
+                                            <span class="fas fa-angle-double-right"></span>
+                                            <span class="sr-only">End</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!--col end-->
+                        <div class="col-12 col-sm-5 col-md-5">
+                            <div class="form-group d-flex  justify-content-end sortiraj">
+                                <label class="pr-2" for="">Sortiraj po</label>
+                                <select class="form-control" name="sortiraj">
+                                    <option value="naziv">Nazivu (asc)</option>
+                                    <option value="cena">Ceni</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--col end-->
+                    </div>
+                    <!--row end-->
+                </div>
+                <!--container end-->
+            </article>
+            <!--paggination end-->
+        </section>
+        <!--section katalog end-->
 
         <section class="proizvod">
             <div class="container">
@@ -208,7 +301,6 @@ and open the template in the editor.
                                                 <input type="number" class="kolicina" name="kolicina" value="1">
                                                 <img class="popust" src="img/proizvod/popust.png" alt="">
                                             </div>
-
                                         </li>
                                         <li>
                                             <div class="form-group">
@@ -310,7 +402,7 @@ and open the template in the editor.
                         <aside
                             class="bottom-right-side d-sm-flex flex-sm-column align-items-sm-center align-items-lg-end">
                             <figure>
-                                <img src="img/logo.png" alt="">
+                                <a href="index.html"><img src="img/logo.png" alt=""></a>
                             </figure>
                             <p>Beograd, Voždovac, Ustanička 128b</p>
                             <p>T. <a href="tel:+381 11 3471-182" class="pr-2">+381 11 3471-182</a><a

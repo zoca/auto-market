@@ -28,16 +28,20 @@ $th-text-color: #fff;
       font-size: 1.4rem;
     }
 
-    .fa-search {
-      height: 30px;
-      width: 36px;
-      line-height: 30px;
-      background: #f2e334;
-      border-left: 1px solid $search-box-bg;
-
-      &::before {
-        padding-left: 9px;
+    a{
+      color: $font-color;
+      .fa-search {
+        height: 30px;
+        width: 36px;
+        line-height: 30px;
+        background: #f2e334;
+        border-left: 1px solid $search-box-bg;
+  
+        &::before {
+          padding-left: 9px;
+        }
       }
+
     }
 
     .form-control {

@@ -2,7 +2,9 @@ $(document).ready(function () {
 
     // lead slider
     if ($('.lead-slider').length > 0) {
-        $('.lead-slider').owlCarousel({
+        let lead = $('.lead-slider');
+
+        lead.owlCarousel({
             items: 1,
             dots: false,
             loop: true,
@@ -11,6 +13,13 @@ $(document).ready(function () {
             autoplayTimeout: 3000,
             autoplayHoverPause: true
         });
+
+        // lead.on("changed.owl.carousel", function(event){
+        //     let item = event.item.index-2;
+
+        //     $('.custom-caption').removeClass('animated slideInUp');
+        //     !$('.owl-item')('.cloned').eq(item).find('.custom-caption').addClass('animated slideInUp');
+        // });
     }
 
     // clients slider

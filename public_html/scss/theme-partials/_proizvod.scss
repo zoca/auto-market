@@ -1,7 +1,13 @@
 $btn-bg: $background-color;
 $btn-text: $base-link-color;
+$border-color: #979797;
+
 
 .proizvod {
+
+  .proizvod-img{
+    border: 1px solid $border-color;
+  }
   .proizvod-content {
     .proizvod-title {
       font-size: 2rem;

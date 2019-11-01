@@ -6,7 +6,7 @@ header {
   background-color: $header-background;
   padding: 10px 0 8px;
 
-  .bold{
+  .bold {
     font-family: $helvetica-bold;
   }
 
@@ -17,7 +17,16 @@ header {
         border-bottom: 1px solid transparent;
         &.active,
         &:not(.no-hover):hover {
-          border-bottom: 1px solid $header-color;
+          &:after {
+            content: "";
+            height: 1px;
+            max-width: 90px;
+            background-color: $header-color;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            left: 5px;
+          }
         }
       }
       .article-sum {
@@ -69,7 +78,17 @@ header {
 
           &.active,
           &:not(.no-hover):hover {
-            border-bottom: 1px solid $header-color;
+            &:after {
+              content: "";
+              height: 1px;
+              max-width: 95px;
+              background-color: $header-color;
+              display: block;
+              position: relative;
+              margin: 0 auto;
+              left: 3px;
+              top: 2px;
+            }
           }
         }
       }
