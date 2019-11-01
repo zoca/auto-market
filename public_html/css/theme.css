@@ -8167,17 +8167,14 @@ footer {
       padding: 3px 0 3px 3px;
       font-family: "HelveticaNeue-Bold";
       text-align: left; }
-    .katalog .katalog-table table tbody td.span-and-img {
-      padding: 0px; }
-      .katalog .katalog-table table tbody td.span-and-img span {
-        display: inline-block;
-        height: 24px;
-        width: 60px;
-        background-color: #fff; }
-      .katalog .katalog-table table tbody td.span-and-img img {
-        width: 18px;
-        height: 18px;
-        padding-left: 3px; }
+    .katalog .katalog-table table tbody td.span-and-img .kolicina {
+      height: 24px;
+      width: 60px;
+      background-color: #fff; }
+    .katalog .katalog-table table tbody td.span-and-img img {
+      width: 18px;
+      height: 18px;
+      padding-left: 3px; }
     .katalog .katalog-table table tbody td.red-green-bullet span {
       display: inline-block;
       width: 12px;
@@ -8284,5 +8281,24 @@ footer {
 @media (min-width: 1200px) {
   .proizvod .proizvod-content .bottom-list .popust {
     margin-left: 139px; } }
+.modal {
+  top: 240px; }
+  .modal .modal-content {
+    width: 324px;
+    background-color: #ececec; }
+    .modal .modal-content .modal-header p {
+      color: #bd0825; }
+    .modal .modal-content .modal-body table {
+      width: 100%; }
+      .modal .modal-content .modal-body table tbody tr td span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #bd0825;
+        border-radius: 50%;
+        background-color: #bd0825; }
+        .modal .modal-content .modal-body table tbody tr td span.na-stanju {
+          border: 1px solid #00c340;
+          background-color: #00c340; }
 
 /*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,40 @@
+$modal-bg: #ececec;
+$stanje-color: #bd0825;
+
+.modal {
+    top: 240px;
+  .modal-content {
+    width: 324px;
+    background-color: $modal-bg;
+
+    .modal-header {
+      p {
+        color: $stanje-color;
+      }
+    }
+
+    .modal-body {
+      table {
+        width: 100%;
+        tbody {
+          tr {
+            td {
+              span {
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                border: 1px solid #bd0825;
+                border-radius: 50%;
+                background-color: #bd0825;
+                &.na-stanju {
+                  border: 1px solid #00c340;
+                  background-color: #00c340;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
