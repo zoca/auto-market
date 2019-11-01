@@ -26,7 +26,7 @@ $pass-link: #BD0825;
       padding-top: 20px;
     } // log-in-title
 
-    form {
+    .log-in-form {
       .form-group {
           label{
               font-size: 1.4rem;
@@ -35,22 +35,23 @@ $pass-link: #BD0825;
                   color: $pass-link;
               }
           }
-        input {
-          max-width: 375px;
+        .form-control {
+          width: 200px;
         }
-      }
+      } // form-group end
   
       button {
-        margin-left: 82px;
+        margin-left: 74px;
         background: $button-bg;
         border-color: $button-bg;
         color: $btn-text-color;
+        border-radius: 0%;
         &:hover {
           background: rgba(6, 29, 68, 0.8);
           color: $btn-text-color;
         }
       } 
-    } // form end
+    } // log-in form end
 
     p{
         font-size: 1.4rem;
@@ -58,7 +59,7 @@ $pass-link: #BD0825;
             color: $pass-link;
         }
     }
-  }
+  } // login end
 }
 
 @media (min-width: 576px) {
@@ -82,6 +83,21 @@ $pass-link: #BD0825;
     .log-in-lead-title {
       font-size: 2rem;
     }
+
+    .log-in-content{
+      .log-in-form {
+        .form-group {
+          .form-control {
+            width: 250px;
+            height: 35px;
+          }
+
+          button {
+            margin-left: 101px;
+          }
+        } // form-group end
+      }
+    }
   }
 }
 
@@ -102,6 +118,22 @@ $pass-link: #BD0825;
     .log-in-content {
       .log-in-title {
         padding: 26px 0;
+      }
+
+      .log-in-form {
+        .form-group {
+          .form-control {
+            width: 375px;
+            height: 45px;
+          }
+
+          button {
+            margin-left: 150px;
+            width: 99px;
+            height: 45px;
+            font-size: 1.6rem;
+          }
+        } // form-group end
       }
     }
   }

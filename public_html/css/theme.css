@@ -7952,19 +7952,20 @@ footer {
     line-height: 1.5rem;
     font-family: "HelveticaNeue-Bold";
     padding-top: 20px; }
-  .log-in .log-in-content form .form-group label {
+  .log-in .log-in-content .log-in-form .form-group label {
     font-size: 1.4rem; }
-    .log-in .log-in-content form .form-group label::before {
+    .log-in .log-in-content .log-in-form .form-group label::before {
       content: '*';
       color: #BD0825; }
-  .log-in .log-in-content form .form-group input {
-    max-width: 375px; }
-  .log-in .log-in-content form button {
-    margin-left: 82px;
+  .log-in .log-in-content .log-in-form .form-group .form-control {
+    width: 200px; }
+  .log-in .log-in-content .log-in-form button {
+    margin-left: 74px;
     background: #061d44;
     border-color: #061d44;
-    color: #ffffff; }
-    .log-in .log-in-content form button:hover {
+    color: #ffffff;
+    border-radius: 0%; }
+    .log-in .log-in-content .log-in-form button:hover {
       background: rgba(6, 29, 68, 0.8);
       color: #ffffff; }
   .log-in .log-in-content p {
@@ -7981,7 +7982,12 @@ footer {
     padding-bottom: 20px; } }
 @media (min-width: 768px) {
   .log-in .log-in-lead-title {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .log-in .log-in-content .log-in-form .form-group .form-control {
+    width: 250px;
+    height: 35px; }
+  .log-in .log-in-content .log-in-form .form-group button {
+    margin-left: 101px; } }
 @media (min-width: 992px) {
   .log-in {
     margin-bottom: 200px; } }
@@ -7992,7 +7998,15 @@ footer {
       font-size: 3rem;
       padding: 11px 52px; }
     .log-in .log-in-content .log-in-title {
-      padding: 26px 0; } }
+      padding: 26px 0; }
+    .log-in .log-in-content .log-in-form .form-group .form-control {
+      width: 375px;
+      height: 45px; }
+    .log-in .log-in-content .log-in-form .form-group button {
+      margin-left: 150px;
+      width: 99px;
+      height: 45px;
+      font-size: 1.6rem; } }
 .about-us {
   padding: 40px 0; }
   .about-us h2, .about-us h5 {
