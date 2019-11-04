@@ -138,6 +138,12 @@ $(document).ready(function () {
         $('.katalog-img img').attr('src', imgSrc);
     });
 
+    // modal proizvoda
+
+    // $('#modalProizvod').on('shown.bs.modal', function () {
+    //     $('tbody tr').trigger('focus');
+    //   })
+
 
     
 

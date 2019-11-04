@@ -9,6 +9,11 @@ $even-row-bg: #ececec;
     thead {
       display: none;
     }
+    tbody{
+      tr:hover{
+        cursor: pointer;
+      }
+    }
     tr {
       display: flex;
       flex-direction: column;

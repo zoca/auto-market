@@ -10601,6 +10601,8 @@ footer {
   margin-bottom: 20px; }
   .katalog .katalog-table thead {
     display: none; }
+  .katalog .katalog-table tbody tr:hover {
+    cursor: pointer; }
   .katalog .katalog-table tr {
     display: flex;
     flex-direction: column;
