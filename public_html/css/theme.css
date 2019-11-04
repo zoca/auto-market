@@ -10200,17 +10200,25 @@ header {
   header .navbar a img {
     max-width: 200px; } }
 @media (min-width: 768px) {
-  header .login-menu .top-ul .nav-link:not(.no-border-l)::before {
-    content: "|";
-    color: #ffffff;
-    margin: 0 5px; }
+  header .login-menu .top-ul {
+    align-items: center; }
+    header .login-menu .top-ul .nav-link:not(.no-border-l)::before {
+      content: "|";
+      color: #ffffff;
+      margin: 0 5px; }
   header .navbar a img {
     max-width: 243px; } }
 @media (min-width: 1200px) {
-  .main-menu .nav-item .nav-link:not(.no-border-l)::before {
-    content: "|";
-    color: #ffffff;
-    margin-right: 5px; } }
+  .main-menu .nav-item .nav-link {
+    padding: 0 1rem !important;
+    position: relative; }
+    .main-menu .nav-item .nav-link:not(.no-border-l)::before {
+      content: "|";
+      color: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); } }
 .slider-wrapper .custom-caption {
   position: absolute;
   left: 0px;
@@ -10590,71 +10598,130 @@ footer {
   .search-box {
     max-height: 40px; } }
 .katalog .katalog-table {
-  margin-bottom: 30px; }
-  .katalog .katalog-table table thead {
-    background-color: #061d44;
-    color: #fff;
-    line-height: 2.2rem;
-    text-align: center; }
-    .katalog .katalog-table table thead th {
-      height: 34px;
-      padding: 3px 13px;
-      font-size: 1.3rem; }
-  .katalog .katalog-table table tbody td {
-    text-align: center;
-    padding: 3px 13px;
-    font-size: 1.3rem; }
-    .katalog .katalog-table table tbody td a {
-      color: #bd0825; }
-    .katalog .katalog-table table tbody td .span-logo {
-      height: 34px;
-      padding: 4px 24px;
-      border: 1px solid #000;
-      border-radius: 20px; }
-    .katalog .katalog-table table tbody td.n-proizvoda {
-      padding: 3px 0 3px 3px;
-      font-family: "HelveticaNeue-Bold";
-      text-align: left; }
-    .katalog .katalog-table table tbody td.span-and-img .kolicina {
-      height: 24px;
-      width: 60px;
-      background-color: #fff; }
-    .katalog .katalog-table table tbody td.span-and-img img {
-      width: 18px;
-      height: 18px;
-      padding-left: 3px; }
-    .katalog .katalog-table table tbody td.red-green-bullet span {
-      display: inline-block;
-      width: 12px;
-      height: 12px;
-      border: 1px solid #bd0825;
-      border-radius: 50%;
-      background-color: #bd0825; }
-      .katalog .katalog-table table tbody td.red-green-bullet span.active {
-        border: 1px solid #00c340;
-        background-color: #00c340; }
-  .katalog .katalog-table .katalog-img-section .katalog-img {
-    padding-top: 5px; }
-    .katalog .katalog-table .katalog-img-section .katalog-img figcaption {
-      background-color: #061d44;
-      height: 32px;
-      color: #fff;
-      text-align: center;
-      padding-top: 3px; }
-    .katalog .katalog-table .katalog-img-section .katalog-img img {
-      border: 1px solid #979797;
-      width: 100%; }
-  .katalog .katalog-table .katalog-img-section .naziv-proizvoda {
-    font-family: "HelveticaNeue-Bold"; }
-  .katalog .katalog-table .katalog-img-section a {
-    color: #000000; }
+  margin-bottom: 20px; }
+  .katalog .katalog-table thead {
+    display: none; }
+  .katalog .katalog-table tr {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #061d44;
+    padding: 10px;
+    margin-bottom: 10px; }
+    .katalog .katalog-table tr td {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .katalog .katalog-table tr td div a.stanje-lagera {
+        margin-top: -20px;
+        display: block;
+        color: #BD0825; }
+        .katalog .katalog-table tr td div a.stanje-lagera:hover {
+          text-decoration: none; }
+      .katalog .katalog-table tr td div input {
+        width: 50px; }
+      .katalog .katalog-table tr td div .fa-shopping-cart {
+        color: #000; }
+      .katalog .katalog-table tr td div.red-green-bullet span {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border: 1px solid #BD0825;
+        border-radius: 50%;
+        background-color: #BD0825; }
+        .katalog .katalog-table tr td div.red-green-bullet span.dostupno {
+          border: 1px solid #00C340;
+          background-color: #00C340; }
+      .katalog .katalog-table tr td p.naziv {
+        text-transform: uppercase;
+        font-family: "HelveticaNeue-Bold";
+        margin: 0; }
 
+@media (min-width: 576px) {
+  .katalog .katalog-table tr {
+    max-width: 49%; } }
 @media (min-width: 768px) {
-  .katalog .katalog-table {
-    margin-bottom: 60px; } }
+  .katalog .katalog-table tr {
+    max-width: 32%; } }
 @media (min-width: 992px) {
+  .katalog .katalog-table tr {
+    max-width: 24%; } }
+@media (min-width: 1200px) {
   .katalog .katalog-table {
-    margin-bottom: 94px; } }
+    margin-bottom: 90px; }
+    .katalog .katalog-table table {
+      font-size: 1.4rem; }
+      .katalog .katalog-table table thead {
+        display: flex;
+        color: #fff;
+        height: 40px; }
+        .katalog .katalog-table table thead tr {
+          background-color: transparent !important; }
+          .katalog .katalog-table table thead tr th {
+            background-color: #061d44;
+            padding: 6px 30px 0;
+            margin-right: 5px; }
+            .katalog .katalog-table table thead tr th:nth-of-type(1) {
+              padding: 6px 40px 0; }
+            .katalog .katalog-table table thead tr th:nth-of-type(2) {
+              padding: 6px 22px 0; }
+            .katalog .katalog-table table thead tr th:nth-of-type(3) {
+              padding: 6px 8px 0;
+              width: 130px; }
+            .katalog .katalog-table table thead tr th:nth-of-type(4) {
+              padding: 6px 8px 0;
+              width: 130px; }
+      .katalog .katalog-table table tbody {
+        margin: 0; }
+      .katalog .katalog-table table tr {
+        border: none;
+        max-width: 100%;
+        flex-direction: row;
+        padding-bottom: 5px;
+        padding-top: 0px;
+        margin: 0; }
+        .katalog .katalog-table table tr:nth-last-of-type(odd) td {
+          background-color: #d2d2d2; }
+        .katalog .katalog-table table tr td {
+          padding: 2px 17px;
+          background-color: #ececec;
+          margin-right: 5px; }
+          .katalog .katalog-table table tr td:last-of-type {
+            margin-right: 0;
+            display: none; }
+          .katalog .katalog-table table tr td:nth-of-type(1) {
+            width: 112px; }
+          .katalog .katalog-table table tr td:nth-of-type(3) {
+            width: 130px;
+            padding: 7px 0 0 32px; }
+          .katalog .katalog-table table tr td:nth-of-type(4) {
+            width: 130px; }
+          .katalog .katalog-table table tr td:nth-of-type(5) {
+            width: 96px;
+            padding: 10px 0 0 20px; }
+          .katalog .katalog-table table tr td:nth-of-type(6) {
+            width: 126px;
+            padding-left: 27px; }
+          .katalog .katalog-table table tr td:nth-of-type(7) {
+            width: 60px;
+            padding-left: 22px; }
+          .katalog .katalog-table table tr td span,
+          .katalog .katalog-table table tr td .slika {
+            display: none; }
+          .katalog .katalog-table table tr td a.stanje-lagera {
+            margin-top: -16px; }
+          .katalog .katalog-table table tr td .table-logo {
+            max-width: 90px; }
+    .katalog .katalog-table .katalog-img-section .katalog-img {
+      border: 1px solid #979797; }
+      .katalog .katalog-table .katalog-img-section .katalog-img figcaption {
+        background-color: #061d44;
+        color: #fff;
+        height: 34px;
+        text-align: center; }
+    .katalog .katalog-table .katalog-img-section a {
+      color: #000; } }
 .proizvod .proizvod-img {
   border: 1px solid #979797; }
 .proizvod .proizvod-content .proizvod-title {
@@ -10731,24 +10798,23 @@ footer {
 @media (min-width: 1200px) {
   .proizvod .proizvod-content .bottom-list .popust {
     margin-left: 139px; } }
-.modal {
-  top: 240px; }
-  .modal .modal-content {
-    width: 324px;
-    background-color: #ececec; }
-    .modal .modal-content .modal-header p {
-      color: #bd0825; }
-    .modal .modal-content .modal-body table {
-      width: 100%; }
-      .modal .modal-content .modal-body table tbody tr td span {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        border: 1px solid #bd0825;
-        border-radius: 50%;
-        background-color: #bd0825; }
-        .modal .modal-content .modal-body table tbody tr td span.na-stanju {
-          border: 1px solid #00c340;
-          background-color: #00c340; }
+.modal .modal-dialog .modal-content {
+  width: 324px;
+  background-color: #ececec;
+  margin: 0 auto; }
+  .modal .modal-dialog .modal-content .modal-header p {
+    color: #bd0825; }
+  .modal .modal-dialog .modal-content .modal-body table {
+    width: 100%; }
+    .modal .modal-dialog .modal-content .modal-body table tbody tr td span {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 1px solid #bd0825;
+      border-radius: 50%;
+      background-color: #bd0825; }
+      .modal .modal-dialog .modal-content .modal-body table tbody tr td span.na-stanju {
+        border: 1px solid #00c340;
+        background-color: #00c340; }
 
 /*# sourceMappingURL=theme.css.map */

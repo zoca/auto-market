@@ -1,125 +1,86 @@
 $thead-bg: #061d44;
 $th-text-color: #fff;
+$odd-row-bg: #d2d2d2;
+$even-row-bg: #ececec;
 
 .katalog {
   .katalog-table {
-    margin-bottom: 30px;
-    table {
-      thead {
-        background-color: $thead-bg;
-        color: $th-text-color;
-        line-height: 2.2rem;
-        text-align: center;
-        th {
-          height: 34px;
-          padding: 3px 13px;
-          font-size: 1.3rem;
-        }
-      } // thead end
-      tbody {
-        td {
-          text-align: center;
-          padding: 3px 13px;
-          font-size: 1.3rem;
-
-          a {
-            color: #bd0825;
-          }
-
-          .span-logo {
-            height: 34px;
-            padding: 4px 24px;
-            border: 1px solid #000;
-            border-radius: 20px;
-          } // span-logo end
-
-          &.n-proizvoda {
-            padding: 3px 0 3px 3px;
-            font-family: $helvetica-bold;
-            text-align: left;
-          } // n-proizvoda end
-
-          // &.span-and-img {
-          //   padding: 0px;
-          //   span {
-          //     display: inline-block;
-          //     height: 24px;
-          //     width: 60px;
-          //     background-color: #fff;
-          //   }
-
-          //   img {
-          //     width: 18px;
-          //     height: 18px;
-          //     padding-left: 3px;
-          //   }
-          // } //span-and-img end
-
-          &.span-and-img {
-            .kolicina{
-                  height: 24px;
-                  width: 60px;
-                  background-color: #fff;
-
+    margin-bottom: 20px;
+    thead {
+      display: none;
+    }
+    tr {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      margin: 0 auto;
+      border: 1px solid $thead-bg;
+      padding: 10px;
+      margin-bottom: 10px;
+      td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div {
+          a.stanje-lagera {
+            margin-top: -20px;
+            display: block;
+            color: $red;
+            &:hover {
+              text-decoration: none;
             }
-
-            img {
-                  width: 18px;
-                  height: 18px;
-                  padding-left: 3px;
-                }
           }
+
+          input {
+            width: 50px;
+          }
+
+          .fa-shopping-cart {
+            color: #000;
+          }
+
           &.red-green-bullet {
             span {
-              display: inline-block;
+              display: block;
               width: 12px;
               height: 12px;
-              border: 1px solid #bd0825;
+              border: 1px solid $red;
               border-radius: 50%;
-              background-color: #bd0825;
+              background-color: $red;
 
-              &.active {
-                border: 1px solid #00c340;
-                background-color: #00c340;
+              &.dostupno {
+                border: 1px solid $green;
+                background-color: $green;
               }
             }
-          } // red-greeb-bullet end
-        } //td end
-      } //tbody end
-    } // table end
+          }
+        } // div
 
-    .katalog-img-section {
-      .katalog-img {
-        padding-top: 5px;
-        figcaption {
-          background-color: $thead-bg;
-          height: 32px;
-          color: $th-text-color;
-          text-align: center;
-          padding-top: 3px;
+        p.naziv {
+          text-transform: uppercase;
+          font-family: $helvetica-bold;
+          margin: 0;
         }
-
-        img {
-          border: 1px solid #979797;
-          width: 100%;
-        }
-      }
-
-      .naziv-proizvoda {
-        font-family: $helvetica-bold;
-      }
-
-      a {
-        color: $font-color;
-      }
-    }
-  } // katalog-table end
+      } //td end
+    } // tr end
+  }
 }
 
+@media (min-width: 576px) {
+  .katalog {
+    .katalog-table {
+      tr {
+        max-width: 49%;
+      }
+    }
+  }
+}
 @media (min-width: 768px) {
   .katalog {
     .katalog-table {
-      margin-bottom: 60px;
+      tr {
+        max-width: 32%;
+      }
     }
   }
 }
@@ -127,7 +88,121 @@ $th-text-color: #fff;
 @media (min-width: 992px) {
   .katalog {
     .katalog-table {
-      margin-bottom: 94px;
+      tr {
+        max-width: 24%;
+      }
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .katalog {
+    .katalog-table {
+      margin-bottom: 90px;
+      table {
+        font-size: 1.4rem;
+        thead {
+          display: flex;
+          color: #fff;
+          height: 40px;
+          tr {
+            background-color: transparent !important;
+            th {
+              background-color: $thead-bg;
+              padding: 6px 30px 0;
+              margin-right: 5px;
+              &:nth-of-type(1) {
+                padding: 6px 40px 0;
+              }
+              &:nth-of-type(2) {
+                padding: 6px 22px 0;
+              }
+              &:nth-of-type(3) {
+                padding: 6px 8px 0;
+                width: 130px;
+              }
+              &:nth-of-type(4) {
+                padding: 6px 8px 0;
+                width: 130px;
+              }
+            }
+          }
+        }
+        tbody {
+          margin: 0;
+        }
+        tr {
+          border: none;
+          max-width: 100%;
+          flex-direction: row;
+          padding-bottom: 5px;
+          padding-top: 0px;
+          margin: 0;
+          &:nth-last-of-type(odd) {
+            td {
+              background-color: $odd-row-bg;
+            }
+          }
+          td {
+            padding: 2px 17px;
+            background-color: $even-row-bg;
+            margin-right: 5px;
+            &:last-of-type {
+              margin-right: 0;
+              display: none;
+            }
+            &:nth-of-type(1) {
+              width: 112px;
+            }
+            &:nth-of-type(3) {
+              width: 130px;
+              padding: 7px 0 0 32px;
+            }
+            &:nth-of-type(4) {
+              width: 130px;
+            }
+            &:nth-of-type(5) {
+              width: 96px;
+              padding: 10px 0 0 20px;
+            }
+            &:nth-of-type(6) {
+              width: 126px;
+              padding-left: 27px;
+            }
+            &:nth-of-type(7) {
+              width: 60px;
+              padding-left: 22px;
+            }
+            span,
+            .slika {
+              display: none;
+            }
+
+            a.stanje-lagera {
+              margin-top: -16px;
+            }
+
+            .table-logo {
+              max-width: 90px;
+            }
+          }
+        }
+      }
+      .katalog-img-section{
+        .katalog-img {
+          border: 1px solid #979797;
+          figcaption {
+            background-color: $thead-bg;
+            color: #fff;
+            height: 34px;
+            text-align: center;
+          }
+        }
+        a{
+          color: #000;
+          
+        }
+      }
+    } //katalog table end
   }
 }

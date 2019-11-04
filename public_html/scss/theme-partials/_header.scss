@@ -127,6 +127,7 @@ header {
   header {
     .login-menu {
       .top-ul {
+        align-items: center;
         .nav-link {
           &:not(.no-border-l)::before {
             content: "|";
@@ -150,10 +151,16 @@ header {
   .main-menu {
     .nav-item {
       .nav-link {
+        padding: 0 1rem !important;
+        position: relative;
         &:not(.no-border-l)::before {
           content: "|";
           color: $header-color;
-          margin-right: 5px;
+          
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }

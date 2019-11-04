@@ -111,7 +111,8 @@ and open the template in the editor.
                     <hr class="d-md-none">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l no-hover" href="index.html">
+                            <a class="nav-link text-nowrap text-uppercase home-icon no-border-l no-hover"
+                                href="index.html">
                                 <img src="img/home.png" alt="">
                             </a>
                         </li>
@@ -243,204 +244,384 @@ and open the template in the editor.
             <article class="katalog-table">
                 <div class="container">
                     <div class="row no-gutters">
-                        <div class="col-12 col-md-8 col-lg-9">
-                            <table class="table-responsive table-bordered table-striped">
+                        <div class="col-12 col-xl-9">
+                            <table>
                                 <thead>
                                     <tr>
-                                        <th scope="col">Šifra</th>
-                                        <th scope="col">Proizvođač</th>
-                                        <th scope="col" nowrap>Kataloški broj</th>
-                                        <th scope="col" nowrap>Naziv proizvoda</th>
-                                        <th scope="col">Cena</th>
-                                        <th scope="col">Kupovina</th>
-                                        <th scope="col"></th>
+                                        <th>Šifra</th>
+                                        <th>Proizvođač</th>
+                                        <th>Kataloški broj</th>
+                                        <th>Naziv proizvoda</th>
+                                        <th>Cena</th>
+                                        <th>Kupovina</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody class="row">
                                     <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Šifra:
+                                            </span>
+                                            <div>
+                                                <p>402068919</p>
+                                                <a href="#myModal" data-toggle="modal" class="stanje-lagera">stanje
+                                                    lagera</a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
+                                        <td>
+                                            <span>
+                                                Proizvođač:
+                                            </span>
+                                            <img class="table-logo" src="img/tablelogo.png" alt="">
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kataloški broj:
+                                            </span>
+                                            <p>402068919</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Naziv proizvoda:
+                                            </span>
+                                            <p class="naziv">brizgaljka za </p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Cena:
+                                            </span>
+                                            <p>14.560.00</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kupovina:
+                                            </span>
+                                            <div>
                                                 <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                                <a href="#" class="fas fa-shopping-cart"></a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span class="active"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Dostupan:
+                                            </span>
+                                            <div class="red-green-bullet">
+                                                <span></span>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span class="active"></span></td>
+                                        <td>
+                                            <span>
+                                                Slika:
+                                            </span>
+                                            <img class="slika" src="https://via.placeholder.com/150" alt="">
+                                        </td>
                                     </tr>
+                                    <!--tr end-->
                                     <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Šifra:
+                                            </span>
+                                            <div>
+                                                <p>402068919</p>
+                                                <a href="#myModal" data-toggle="modal" class="stanje-lagera">stanje
+                                                    lagera</a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
+                                        <td>
+                                            <span>
+                                                Proizvođač:
+                                            </span>
+                                            <img class="table-logo" src="img/tablelogo.png" alt="">
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kataloški broj:
+                                            </span>
+                                            <p>402068919</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Naziv proizvoda:
+                                            </span>
+                                            <p class="naziv">brizgaljka za </p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Cena:
+                                            </span>
+                                            <p>14.560.00</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kupovina:
+                                            </span>
+                                            <div>
                                                 <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                                <a href="#" class="fas fa-shopping-cart"></a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span class="active"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Dostupan:
+                                            </span>
+                                            <div class="red-green-bullet">
+                                                <span class="dostupno"></span>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
+                                        <td>
+                                            <span>
+                                                Slika:
+                                            </span>
+                                            <img class="slika" src="https://via.placeholder.com/150" alt="">
+                                        </td>
                                     </tr>
+                                    <!--tr end-->
                                     <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Šifra:
+                                            </span>
+                                            <div>
+                                                <p>402068919</p>
+                                                <a href="#myModal" data-toggle="modal" class="stanje-lagera">stanje
+                                                    lagera</a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span class="active"></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
+                                        <td>
+                                            <span>
+                                                Proizvođač:
+                                            </span>
+                                            <img class="table-logo" src="img/tablelogo.png" alt="">
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kataloški broj:
+                                            </span>
+                                            <p>402068919</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Naziv proizvoda:
+                                            </span>
+                                            <p class="naziv">brizgaljka za </p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Cena:
+                                            </span>
+                                            <p>14.560.00</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kupovina:
+                                            </span>
+                                            <div>
                                                 <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                                <a href="#" class="fas fa-shopping-cart"></a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Dostupan:
+                                            </span>
+                                            <div class="red-green-bullet">
+                                                <span></span>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
+                                        <td>
+                                            <span>
+                                                Slika:
+                                            </span>
+                                            <img class="slika" src="https://via.placeholder.com/150" alt="">
+                                        </td>
                                     </tr>
+                                    <!--tr end-->
                                     <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Šifra:
+                                            </span>
+                                            <div>
+                                                <p>402068919</p>
+                                                <a href="#myModal" data-toggle="modal" class="stanje-lagera">stanje
+                                                    lagera</a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
+                                        <td>
+                                            <span>
+                                                Proizvođač:
+                                            </span>
+                                            <img class="table-logo" src="img/tablelogo.png" alt="">
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kataloški broj:
+                                            </span>
+                                            <p>402068919</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Naziv proizvoda:
+                                            </span>
+                                            <p class="naziv">brizgaljka za </p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Cena:
+                                            </span>
+                                            <p>14.560.00</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kupovina:
+                                            </span>
+                                            <div>
                                                 <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                                <a href="#" class="fas fa-shopping-cart"></a>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td nowrap>402068919<br>
-                                            <a href="#myModal" data-toggle="modal">stanje lagera</a> </td>
-                                        <td><span class="text-uppercase span-logo">logo</span></td>
-                                        <td>402068919</td>
-                                        <td class="n-proizvoda">BRIZGALJKA ZA VODU</td>
-                                        <td>14.560.00</td>
-                                        <td class="span-and-img">
-                                            <div class="form-group">
-                                                <input type="number" class="kolicina" name="kolicina" value="1">
-                                                <a href="#"><img src="img/katalog/korpa.png"></a>
+                                        <td>
+                                            <span>
+                                                Dostupan:
+                                            </span>
+                                            <div class="red-green-bullet">
+                                                <span class="dostupno"></span>
                                             </div>
                                         </td>
-                                        <td class="red-green-bullet"><span></span></td>
+                                        <td>
+                                            <span>
+                                                Slika:
+                                            </span>
+                                            <img class="slika" src="https://via.placeholder.com/150" alt="">
+                                        </td>
                                     </tr>
-                                </tbody>
+                                    <!--tr end-->
+                                    <tr>
+                                        <td>
+                                            <span>
+                                                Šifra:
+                                            </span>
+                                            <div>
+                                                <p>402068919</p>
+                                                <a href="#myModal" data-toggle="modal" class="stanje-lagera">stanje
+                                                    lagera</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Proizvođač:
+                                            </span>
+                                            <img class="table-logo" src="img/tablelogo.png" alt="">
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kataloški broj:
+                                            </span>
+                                            <p>402068919</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Naziv proizvoda:
+                                            </span>
+                                            <p class="naziv">brizgaljka za </p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Cena:
+                                            </span>
+                                            <p>14.560.00</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kupovina:
+                                            </span>
+                                            <div>
+                                                <input type="number" class="kolicina" name="kolicina" value="1">
+                                                <a href="#" class="fas fa-shopping-cart"></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Dostupan:
+                                            </span>
+                                            <div class="red-green-bullet">
+                                                <span class="dostupno"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Slika:
+                                            </span>
+                                            <img class="slika" src="https://via.placeholder.com/150" alt="">
+                                        </td>
+                                    </tr>
+                                    <!--tr end-->
+                                    <tr>
+                                        <td>
+                                            <span>
+                                                Šifra:
+                                            </span>
+                                            <div>
+                                                <p>402068919</p>
+                                                <a href="#myModal" data-toggle="modal" class="stanje-lagera">stanje
+                                                    lagera</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Proizvođač:
+                                            </span>
+                                            <img class="table-logo" src="img/tablelogo.png" alt="">
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kataloški broj:
+                                            </span>
+                                            <p>402068919</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Naziv proizvoda:
+                                            </span>
+                                            <p class="naziv">brizgaljka za </p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Cena:
+                                            </span>
+                                            <p>14.560.00</p>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Kupovina:
+                                            </span>
+                                            <div>
+                                                <input type="number" class="kolicina" name="kolicina" value="1">
+                                                <a href="#" class="fas fa-shopping-cart"></a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Dostupan:
+                                            </span>
+                                            <div class="red-green-bullet">
+                                                <span class="dostupno"></span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span>
+                                                Slika:
+                                            </span>
+                                            <img class="slika" src="https://via.placeholder.com/150" alt="">
+                                        </td>
+                                    </tr>
+                                    <!--tr end-->
+                                </tbody> <!-- tbody end-->
                             </table>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-3">
+                        <div class="col-xl-3 d-none d-xl-block">
                             <aside class="katalog-img-section">
                                 <figure class="katalog-img">
                                     <figcaption>Slika</figcaption>
@@ -520,7 +701,7 @@ and open the template in the editor.
                         <aside
                             class="bottom-right-side d-sm-flex flex-sm-column align-items-sm-center align-items-lg-end">
                             <figure>
-                                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                                <a href="index.html"><img src="img/logo.png" alt=""></a>
                             </figure>
                             <p>Beograd, Voždovac, Ustanička 128b</p>
                             <p>T. <a href="tel:+381 11 3471-182" class="pr-2">+381 11 3471-182</a><a
@@ -541,7 +722,7 @@ and open the template in the editor.
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
 
             <!-- Modal content-->
             <div class="modal-content">
@@ -581,14 +762,6 @@ and open the template in the editor.
                             </tr>
                         </tbody>
                     </table>
-                    <!-- <ul>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                        <li> </li>
-                    </ul> -->
                 </div>
             </div>
 
