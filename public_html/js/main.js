@@ -130,6 +130,15 @@ $(document).ready(function () {
         });
     }
 
+    //change img on katalog
+
+    $('.naziv').on('click', 'p', function(){
+        let imgSrc = $(this).parent().attr('data-image');
+        //console.log(imgSrc);
+        $('.katalog-img img').attr('src', imgSrc);
+    });
+
+
     
 
     //ANIMATION

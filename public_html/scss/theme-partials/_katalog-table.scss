@@ -56,10 +56,12 @@ $even-row-bg: #ececec;
           }
         } // div
 
-        p.naziv {
-          text-transform: uppercase;
-          font-family: $helvetica-bold;
-          margin: 0;
+        &.naziv {
+          p{
+            text-transform: uppercase;
+            font-family: $helvetica-bold;
+            margin: 0;
+          }
         }
       } //td end
     } // tr end

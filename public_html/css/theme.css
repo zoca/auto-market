@@ -10633,7 +10633,7 @@ footer {
         .katalog .katalog-table tr td div.red-green-bullet span.dostupno {
           border: 1px solid #00C340;
           background-color: #00C340; }
-      .katalog .katalog-table tr td p.naziv {
+      .katalog .katalog-table tr td.naziv p {
         text-transform: uppercase;
         font-family: "HelveticaNeue-Bold";
         margin: 0; }
