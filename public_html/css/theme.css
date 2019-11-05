@@ -10601,8 +10601,6 @@ footer {
   margin-bottom: 20px; }
   .katalog .katalog-table thead {
     display: none; }
-  .katalog .katalog-table tbody tr:hover {
-    cursor: pointer; }
   .katalog .katalog-table tr {
     display: flex;
     flex-direction: column;
@@ -10676,6 +10674,10 @@ footer {
               width: 130px; }
       .katalog .katalog-table table tbody {
         margin: 0; }
+        .katalog .katalog-table table tbody tr:hover {
+          cursor: pointer; }
+          .katalog .katalog-table table tbody tr:hover td {
+            background-color: rgba(133, 131, 131, 0.6); }
       .katalog .katalog-table table tr {
         border: none;
         max-width: 100%;
@@ -10818,5 +10820,70 @@ footer {
       .modal .modal-dialog .modal-content .modal-body table tbody tr td span.na-stanju {
         border: 1px solid #00c340;
         background-color: #00c340; }
+
+#modalProizvod .modal-content {
+  width: 885px;
+  min-height: 585px; }
+  #modalProizvod .modal-content .modal-header {
+    align-items: center;
+    padding: 0;
+    background-color: #d2d2d2; }
+    #modalProizvod .modal-content .modal-header .breadcrumb {
+      background-color: transparent; }
+      #modalProizvod .modal-content .modal-header .breadcrumb .breadcrumb-item {
+        text-transform: uppercase; }
+        #modalProizvod .modal-content .modal-header .breadcrumb .breadcrumb-item.active {
+          display: inline-block;
+          padding-left: 13px;
+          color: #000;
+          text-decoration: underline; }
+          #modalProizvod .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before {
+            content: ">>";
+            display: inline-block;
+            padding-right: 0.5rem;
+            color: #000;
+            font-size: 1rem; }
+    #modalProizvod .modal-content .modal-header div a {
+      color: #061d44;
+      padding: 0 5px; }
+      #modalProizvod .modal-content .modal-header div a:hover {
+        text-decoration: none; }
+      #modalProizvod .modal-content .modal-header div a:first-of-type::after {
+        content: "";
+        position: absolute;
+        right: 124px;
+        top: 18px;
+        height: 13px;
+        width: 1px;
+        background: #061d44; }
+      #modalProizvod .modal-content .modal-header div a .fa-angle-left,
+      #modalProizvod .modal-content .modal-header div a .fa-angle-right {
+        font-size: 1.4rem; }
+  #modalProizvod .modal-content .modal-body .bottom-slider li {
+    max-height: 100px; }
+    #modalProizvod .modal-content .modal-body .bottom-slider li img {
+      height: 100px; }
+  #modalProizvod .modal-content .modal-body .proizvod-content .proizvod-title {
+    font-size: 1.4rem;
+    font-family: "HelveticaNeue-Bold"; }
+  #modalProizvod .modal-content .modal-body .proizvod-content p {
+    border-bottom: 1px dotted #061d44;
+    border-width: 50%; }
+  #modalProizvod .modal-content .modal-footer {
+    justify-content: flex-start; }
+    #modalProizvod .modal-content .modal-footer .card-section {
+      width: 100%; }
+      #modalProizvod .modal-content .modal-footer .card-section .card-header {
+        width: 152px;
+        height: 34px;
+        background-color: #061d44;
+        color: #fff;
+        text-align: center;
+        line-height: normal;
+        font-size: 1.4rem; }
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 885px; } }
 
 /*# sourceMappingURL=theme.css.map */

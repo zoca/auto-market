@@ -9,13 +9,8 @@ $even-row-bg: #ececec;
     thead {
       display: none;
     }
-    tbody{
-      tr:hover{
-        cursor: pointer;
-      }
-    }
     tr {
-      display: flex;
+      display: flex; 
       flex-direction: column;
       max-width: 100%;
       margin: 0 auto;
@@ -137,6 +132,12 @@ $even-row-bg: #ececec;
         }
         tbody {
           margin: 0;
+          tr:hover{
+            cursor: pointer;
+            td{
+              background-color: rgba(133, 131, 131, 0.6);
+            } 
+          }
         }
         tr {
           border: none;

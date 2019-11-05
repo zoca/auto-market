@@ -53,7 +53,7 @@ $(document).ready(function () {
                 700: {
                     items: 6,
                     margin: 6,
-                    nav:true
+                    nav: true
                 },
                 1000: {
                     items: 8,
@@ -92,9 +92,9 @@ $(document).ready(function () {
         });
     }
 
-      // log-in validate
+    // log-in validate
 
-      if ($('.log-in-form')) {
+    if ($('.log-in-form')) {
         $('.log-in-form').validate({
             highlight: function (element) {
                 $(element).addClass('is-invalid').removeClass('is-valid');
@@ -130,22 +130,60 @@ $(document).ready(function () {
         });
     }
 
+
+    // open modal lager
+
+    $('.stanje-lagera').click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('#myModal').modal('show');
+    });
+
+     // open modal product
+
+    //  $('#modalProizvod').on('shown.bs.modal', function (e) {
+    // });
+
+
+        // slick slider
+        if($('.product-slider')){
+            $('.product-slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.bottom-slider'
+            });
+            $('.bottom-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                asNavFor: '.product-slider',
+                dots: false,
+                centerMode: true,
+                focusOnSelect: true,
+                adaptiveHeight: true
+            });
+
+
+            $('.product-slider a').zoom();
+        
+        }
+
     //change img on katalog
 
-    $('.naziv').on('click', 'p', function(){
-        let imgSrc = $(this).parent().attr('data-image');
+    $('tbody tr').hover(function () {
+        let imgSrc = $(this).find('.naziv').attr('data-image');
         //console.log(imgSrc);
         $('.katalog-img img').attr('src', imgSrc);
     });
 
-    // modal proizvoda
 
-    // $('#modalProizvod').on('shown.bs.modal', function () {
-    //     $('tbody tr').trigger('focus');
-    //   })
-
-
+   
     
+
+
+
+
 
     //ANIMATION
     function animation() {
@@ -172,3 +210,7 @@ $(document).ready(function () {
 
 
 });
+
+$('.modal').on('shown.bs.modal', function (e) {
+    $(window).resize();
+  });

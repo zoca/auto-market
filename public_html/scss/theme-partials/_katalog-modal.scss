@@ -1,5 +1,8 @@
 $modal-bg: #ececec;
 $stanje-color: #bd0825;
+$prew-next-color: #061d44;
+$modal-header-bg: #d2d2d2;
+$card-header-text: #fff;
 
 .modal {
   .modal-dialog {
@@ -38,4 +41,101 @@ $stanje-color: #bd0825;
       } // modal-body end
     } // modal-content end
   } // modal-dialog end
+}
+
+#modalProizvod {
+  .modal-content {
+    width: 885px;
+    min-height: 585px;
+    .modal-header {
+      align-items: center;
+      padding: 0;
+      background-color: $modal-header-bg;
+      .breadcrumb {
+        background-color: transparent;
+        .breadcrumb-item {
+          text-transform: uppercase;
+          &.active {
+            display: inline-block;
+            padding-left: 13px;
+            color: #000;
+            text-decoration: underline;
+            &::before {
+              content: ">>";
+              display: inline-block;
+              padding-right: 0.5rem;
+              color: #000;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      div {
+        a {
+          color: $prew-next-color;
+          padding: 0 5px;
+          &:hover {
+            text-decoration: none;
+          }
+          &:first-of-type::after {
+            content: "";
+            position: absolute;
+            right: 124px;
+            top: 18px;
+            height: 13px;
+            width: 1px;
+            background: $prew-next-color;
+          }
+
+          .fa-angle-left,
+          .fa-angle-right {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    } // modal header end
+
+    .modal-body {
+      .bottom-slider {
+        li {
+          max-height: 100px;
+          img {
+            height: 100px;
+          }
+        }
+      }
+      .proizvod-content {
+        .proizvod-title {
+          font-size: 1.4rem;
+          font-family: $helvetica-bold;
+        }
+        p {
+          border-bottom: 1px dotted $prew-next-color;
+          border-width: 50%;
+        }
+      }
+    } //modal-body end
+
+    .modal-footer {
+      justify-content: flex-start;
+      .card-section {
+        width: 100%;
+        .card-header {
+          width: 152px;
+          height: 34px;
+          background-color: $prew-next-color;
+          color: $card-header-text;
+          text-align: center;
+          line-height: normal;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  } // modal content end
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 885px;
+  }
 }
