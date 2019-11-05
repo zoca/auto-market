@@ -4,10 +4,10 @@ $prew-next-color: #061d44;
 $modal-header-bg: #d2d2d2;
 $card-header-text: #fff;
 
+// modal lager
 .modal {
   .modal-dialog {
     .modal-content {
-      width: 324px;
       background-color: $modal-bg;
       margin: 0 auto;
       .modal-header {
@@ -38,16 +38,18 @@ $card-header-text: #fff;
             }
           }
         }
-      } // modal-body end
-    } // modal-content end
-  } // modal-dialog end
-}
+      } // .modal-body end
+    } // .modal-content end
+  } // .modal-dialog end
+} // .modal lager end
 
-#modalProizvod {
+
+// modal products start
+
+#modalProduct {
   .modal-content {
-    width: 885px;
-    min-height: 585px;
     .modal-header {
+      flex-direction: column;
       align-items: center;
       padding: 0;
       background-color: $modal-header-bg;
@@ -55,6 +57,7 @@ $card-header-text: #fff;
         background-color: transparent;
         .breadcrumb-item {
           text-transform: uppercase;
+          font-size: 1.2rem;
           &.active {
             display: inline-block;
             padding-left: 13px;
@@ -74,22 +77,9 @@ $card-header-text: #fff;
         a {
           color: $prew-next-color;
           padding: 0 5px;
+          font-size: 1.2rem;
           &:hover {
             text-decoration: none;
-          }
-          &:first-of-type::after {
-            content: "";
-            position: absolute;
-            right: 124px;
-            top: 18px;
-            height: 13px;
-            width: 1px;
-            background: $prew-next-color;
-          }
-
-          .fa-angle-left,
-          .fa-angle-right {
-            font-size: 1.4rem;
           }
         }
       }
@@ -134,8 +124,53 @@ $card-header-text: #fff;
   } // modal content end
 }
 
+@media (min-width: 576px) {
+  #modalProduct {
+    .modal-content {
+      .modal-header {
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
 @media (min-width: 1200px) {
-  .modal-dialog {
-    max-width: 885px;
+  #modalProduct {
+    .modal-dialog {
+      max-width: 70%;
+      .modal-content {
+        .modal-header {
+            .breadcrumb-item {
+              font-size: 1.6rem;
+            }
+          
+          div {
+            a {
+              font-size: 1.6rem;
+              &:first-of-type::after {
+                content: "";
+                position: absolute;
+                right: 124px;
+                top: 16px;
+                height: 13px;
+                width: 1px;
+                background: $prew-next-color;
+
+                .fa-angle-left,
+                .fa-angle-right {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

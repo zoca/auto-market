@@ -139,47 +139,49 @@ $(document).ready(function () {
         $('#myModal').modal('show');
     });
 
-     // open modal product
-
-    //  $('#modalProizvod').on('shown.bs.modal', function (e) {
-    // });
-
-
-        // slick slider
-        if($('.product-slider')){
-            $('.product-slider').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.bottom-slider'
-            });
-            $('.bottom-slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                asNavFor: '.product-slider',
-                dots: false,
-                centerMode: true,
-                focusOnSelect: true,
-                adaptiveHeight: true
-            });
+    // slick slider
+    if ($('.product-slider')) {
+        $('.product-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.bottom-slider'
+        });
+        $('.bottom-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.product-slider',
+            dots: false,
+            centerMode: true,
+            focusOnSelect: true,
+            adaptiveHeight: true
+        });
 
 
-            $('.product-slider a').zoom();
-        
-        }
+        $('.product-slider a').zoom();
+
+    }
 
     //change img on katalog
 
-    $('tbody tr').hover(function () {
+    $('.catalog-table-body tr').hover(function (e) {
+        e.stopPropagation();
+
         let imgSrc = $(this).find('.naziv').attr('data-image');
-        //console.log(imgSrc);
         $('.katalog-img img').attr('src', imgSrc);
+
+        let position = $(this).index();
+        if (position === 0) {
+            $('.prew-arrow').css('display', 'none');
+        } else {
+            $('.prew-arrow').css('display', 'inline-block');
+        }
     });
 
 
-   
-    
+
+
 
 
 
@@ -213,4 +215,4 @@ $(document).ready(function () {
 
 $('.modal').on('shown.bs.modal', function (e) {
     $(window).resize();
-  });
+});
