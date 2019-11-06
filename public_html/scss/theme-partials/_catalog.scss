@@ -3,7 +3,7 @@ $pagination-bg: #ececec;
 $thead-bg: #061d44;
 $th-text-color: #fff;
 
-.katalog {
+.catalog {
   .search-box {
     padding: 7px 0;
     background-color: $search-box-bg;
@@ -17,7 +17,7 @@ $th-text-color: #fff;
       background-color: $search-box-bg;
     }
 
-    .akcije {
+    .discount {
       font-size: 1.4rem;
     }
 
@@ -73,7 +73,7 @@ $th-text-color: #fff;
     } // select end
   } // search box end
 
-  .katalog-pagination {
+  .catalog-pagination {
     padding: 5px 0;
     background-color: $pagination-bg;
 
@@ -128,11 +128,11 @@ $th-text-color: #fff;
       font-size: 1.4rem;
       background-size: 10px;
     } // select end
-  } // section katalog-pagination
+  } // section catalog-pagination
 }
 
 @media (min-width: 768px) {
-  .katalog-pagination {
+  .catalog-pagination {
     max-height: 38px;
     .pagination {
       padding-left: 44px;

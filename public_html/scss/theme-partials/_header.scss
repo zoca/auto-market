@@ -14,24 +14,13 @@ header {
     .nav-item {
       .nav-link {
         color: $header-color;
-        border-bottom: 1px solid transparent;
         &.active,
         &:not(.no-hover):hover {
-          &:after {
-            content: "";
-            height: 1px;
-            max-width: 90px;
-            background-color: $header-color;
-            display: block;
-            position: relative;
-            margin: 0 auto;
-            left: 5px;
-          }
+          text-decoration: underline;
         }
       }
       .article-sum {
         color: $header-color;
-        border-bottom: 1px solid transparent;
         padding-top: 6px;
       }
     }
@@ -74,21 +63,10 @@ header {
           font-size: 1.4rem;
           line-height: 1.6rem;
           letter-spacing: 1px;
-          border-bottom: 1px solid transparent;
 
           &.active,
           &:not(.no-hover):hover {
-            &:after {
-              content: "";
-              height: 1px;
-              max-width: 95px;
-              background-color: $header-color;
-              display: block;
-              position: relative;
-              margin: 0 auto;
-              left: 3px;
-              top: 2px;
-            }
+            text-decoration: underline;
           }
         }
       }

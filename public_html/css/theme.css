@@ -10140,20 +10140,11 @@ header {
   header .bold {
     font-family: "HelveticaNeue-Bold"; }
   header .login-menu .nav-item .nav-link {
-    color: #ffffff;
-    border-bottom: 1px solid transparent; }
-    header .login-menu .nav-item .nav-link.active:after, header .login-menu .nav-item .nav-link:not(.no-hover):hover:after {
-      content: "";
-      height: 1px;
-      max-width: 90px;
-      background-color: #ffffff;
-      display: block;
-      position: relative;
-      margin: 0 auto;
-      left: 5px; }
+    color: #ffffff; }
+    header .login-menu .nav-item .nav-link.active, header .login-menu .nav-item .nav-link:not(.no-hover):hover {
+      text-decoration: underline; }
   header .login-menu .nav-item .article-sum {
     color: #ffffff;
-    border-bottom: 1px solid transparent;
     padding-top: 6px; }
   header .navbar {
     padding: 0px; }
@@ -10173,18 +10164,9 @@ header {
         color: #ffffff;
         font-size: 1.4rem;
         line-height: 1.6rem;
-        letter-spacing: 1px;
-        border-bottom: 1px solid transparent; }
-        header .navbar .main-menu .nav-item .nav-link.active:after, header .navbar .main-menu .nav-item .nav-link:not(.no-hover):hover:after {
-          content: "";
-          height: 1px;
-          max-width: 95px;
-          background-color: #ffffff;
-          display: block;
-          position: relative;
-          margin: 0 auto;
-          left: 3px;
-          top: 2px; }
+        letter-spacing: 1px; }
+        header .navbar .main-menu .nav-item .nav-link.active, header .navbar .main-menu .nav-item .nav-link:not(.no-hover):hover {
+          text-decoration: underline; }
     header .navbar .navbar-toggler {
       border-color: transparent; }
       header .navbar .navbar-toggler span {
@@ -10507,44 +10489,44 @@ footer {
 @media (min-width: 992px) {
   .news {
     padding: 67px 0 60px; } }
-.katalog .search-box {
+.catalog .search-box {
   padding: 7px 0;
   background-color: #d2d2d2; }
-  .katalog .search-box .fake-radio {
+  .catalog .search-box .fake-radio {
     display: inline-block;
     width: 9px;
     height: 9px;
     border: 1px solid #000;
     border-radius: 50%;
     background-color: #d2d2d2; }
-  .katalog .search-box .akcije {
+  .catalog .search-box .discount {
     font-size: 1.4rem; }
-  .katalog .search-box .trazi {
+  .catalog .search-box .trazi {
     padding-right: 5px;
     width: 122px;
     height: 30px;
     font-size: 1.4rem; }
-  .katalog .search-box a {
+  .catalog .search-box a {
     color: #000000; }
-    .katalog .search-box a .fa-search {
+    .catalog .search-box a .fa-search {
       height: 30px;
       width: 36px;
       line-height: 30px;
       background: #f2e334;
       border-left: 1px solid #d2d2d2; }
-      .katalog .search-box a .fa-search::before {
+      .catalog .search-box a .fa-search::before {
         padding-left: 9px; }
-  .katalog .search-box .form-control {
+  .catalog .search-box .form-control {
     padding: 5px 0 5px 8px;
     width: 160px;
     height: 30px; }
-    .katalog .search-box .form-control[type="radio"] {
+    .catalog .search-box .form-control[type="radio"] {
       display: none; }
-    .katalog .search-box .form-control[type="radio"]:checked + .fake-radio {
+    .catalog .search-box .form-control[type="radio"]:checked + .fake-radio {
       background-color: #000; }
-    .katalog .search-box .form-control::placeholder {
+    .catalog .search-box .form-control::placeholder {
       font-size: 1.4rem; }
-  .katalog .search-box select {
+  .catalog .search-box select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -10552,35 +10534,35 @@ footer {
     background: #fff url("../img/arrow.png") no-repeat 96% center;
     font-size: 1.4rem;
     background-size: 10px; }
-.katalog .katalog-pagination {
+.catalog .catalog-pagination {
   padding: 5px 0;
   background-color: #ececec; }
-  .katalog .katalog-pagination p {
+  .catalog .catalog-pagination p {
     font-size: 1.4rem; }
-  .katalog .katalog-pagination .pagination .page-link {
+  .catalog .catalog-pagination .pagination .page-link {
     background-color: transparent;
     border: 0px; }
-    .katalog .katalog-pagination .pagination .page-link.active {
+    .catalog .catalog-pagination .pagination .page-link.active {
       font-weight: bold; }
-    .katalog .katalog-pagination .pagination .page-link .fa-angle-right,
-    .katalog .katalog-pagination .pagination .page-link .fa-angle-double-right {
+    .catalog .catalog-pagination .pagination .page-link .fa-angle-right,
+    .catalog .catalog-pagination .pagination .page-link .fa-angle-double-right {
       display: inline-block;
       width: 17px;
       height: 17px;
       line-height: 10px;
       border: 2px solid #000;
       border-radius: 50%; }
-      .katalog .katalog-pagination .pagination .page-link .fa-angle-right::before,
-      .katalog .katalog-pagination .pagination .page-link .fa-angle-double-right::before {
+      .catalog .catalog-pagination .pagination .page-link .fa-angle-right::before,
+      .catalog .catalog-pagination .pagination .page-link .fa-angle-double-right::before {
         font-size: 1.1rem;
         padding-left: 2px; }
-    .katalog .katalog-pagination .pagination .page-link .fa-angle-right::before {
+    .catalog .catalog-pagination .pagination .page-link .fa-angle-right::before {
       padding-left: 4px; }
-  .katalog .katalog-pagination .form-control {
+  .catalog .catalog-pagination .form-control {
     padding: 5px 0 5px 8px;
     width: 160px;
     height: 30px; }
-  .katalog .katalog-pagination select {
+  .catalog .catalog-pagination select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -10590,18 +10572,18 @@ footer {
     background-size: 10px; }
 
 @media (min-width: 768px) {
-  .katalog-pagination {
+  .catalog-pagination {
     max-height: 38px; }
-    .katalog-pagination .pagination {
+    .catalog-pagination .pagination {
       padding-left: 44px; } }
 @media (min-width: 992px) {
   .search-box {
     max-height: 40px; } }
-.katalog .katalog-table {
+.catalog .catalog-table {
   margin-bottom: 20px; }
-  .katalog .katalog-table thead {
+  .catalog .catalog-table thead {
     display: none; }
-  .katalog .katalog-table tr {
+  .catalog .catalog-table tr {
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -10609,145 +10591,145 @@ footer {
     border: 1px solid #061d44;
     padding: 10px;
     margin-bottom: 10px; }
-    .katalog .katalog-table tr td {
+    .catalog .catalog-table tr td {
       display: flex;
       align-items: center;
       justify-content: space-between; }
-      .katalog .katalog-table tr td div a.stanje-lagera {
+      .catalog .catalog-table tr td div a.stanje-lagera {
         margin-top: -20px;
         display: block;
         color: #BD0825; }
-        .katalog .katalog-table tr td div a.stanje-lagera:hover {
+        .catalog .catalog-table tr td div a.stanje-lagera:hover {
           text-decoration: none; }
-      .katalog .katalog-table tr td div input {
+      .catalog .catalog-table tr td div input {
         width: 50px; }
-      .katalog .katalog-table tr td div .fa-shopping-cart {
+      .catalog .catalog-table tr td div .fa-shopping-cart {
         color: #000; }
-      .katalog .katalog-table tr td div.red-green-bullet span {
+      .catalog .catalog-table tr td div.red-green-bullet span {
         display: block;
         width: 12px;
         height: 12px;
         border: 1px solid #BD0825;
         border-radius: 50%;
         background-color: #BD0825; }
-        .katalog .katalog-table tr td div.red-green-bullet span.dostupno {
+        .catalog .catalog-table tr td div.red-green-bullet span.dostupno {
           border: 1px solid #00C340;
           background-color: #00C340; }
-      .katalog .katalog-table tr td.naziv p {
+      .catalog .catalog-table tr td.name p {
         text-transform: uppercase;
         font-family: "HelveticaNeue-Bold";
         margin: 0; }
 
 @media (min-width: 576px) {
-  .katalog .katalog-table tr {
+  .catalog .catalog-table tr {
     max-width: 49%; } }
 @media (min-width: 768px) {
-  .katalog .katalog-table tr {
+  .catalog .catalog-table tr {
     max-width: 32%; } }
 @media (min-width: 992px) {
-  .katalog .katalog-table tr {
+  .catalog .catalog-table tr {
     max-width: 24%; } }
 @media (min-width: 1200px) {
-  .katalog .katalog-table {
+  .catalog .catalog-table {
     margin-bottom: 90px; }
-    .katalog .katalog-table table {
+    .catalog .catalog-table table {
       font-size: 1.4rem; }
-      .katalog .katalog-table table thead {
+      .catalog .catalog-table table thead {
         display: flex;
         color: #fff;
         height: 40px; }
-        .katalog .katalog-table table thead tr {
+        .catalog .catalog-table table thead tr {
           background-color: transparent !important; }
-          .katalog .katalog-table table thead tr th {
+          .catalog .catalog-table table thead tr th {
             background-color: #061d44;
             padding: 6px 30px 0;
             margin-right: 5px; }
-            .katalog .katalog-table table thead tr th:nth-of-type(1) {
+            .catalog .catalog-table table thead tr th:nth-of-type(1) {
               padding: 6px 40px 0; }
-            .katalog .katalog-table table thead tr th:nth-of-type(2) {
+            .catalog .catalog-table table thead tr th:nth-of-type(2) {
               padding: 6px 22px 0; }
-            .katalog .katalog-table table thead tr th:nth-of-type(3) {
+            .catalog .catalog-table table thead tr th:nth-of-type(3) {
               padding: 6px 8px 0;
               width: 130px; }
-            .katalog .katalog-table table thead tr th:nth-of-type(4) {
+            .catalog .catalog-table table thead tr th:nth-of-type(4) {
               padding: 6px 8px 0;
               width: 130px; }
-      .katalog .katalog-table table tbody {
+      .catalog .catalog-table table tbody {
         margin: 0; }
-        .katalog .katalog-table table tbody tr:hover {
+        .catalog .catalog-table table tbody tr:hover {
           cursor: pointer; }
-          .katalog .katalog-table table tbody tr:hover td {
+          .catalog .catalog-table table tbody tr:hover td {
             background-color: rgba(133, 131, 131, 0.6); }
-      .katalog .katalog-table table tr {
+      .catalog .catalog-table table tr {
         border: none;
         max-width: 100%;
         flex-direction: row;
         padding-bottom: 5px;
         padding-top: 0px;
         margin: 0; }
-        .katalog .katalog-table table tr:nth-last-of-type(odd) td {
+        .catalog .catalog-table table tr:nth-last-of-type(odd) td {
           background-color: #d2d2d2; }
-        .katalog .katalog-table table tr td {
+        .catalog .catalog-table table tr td {
           padding: 2px 17px;
           background-color: #ececec;
           margin-right: 5px; }
-          .katalog .katalog-table table tr td:last-of-type {
+          .catalog .catalog-table table tr td:last-of-type {
             margin-right: 0;
             display: none; }
-          .katalog .katalog-table table tr td:nth-of-type(1) {
+          .catalog .catalog-table table tr td:nth-of-type(1) {
             width: 112px; }
-          .katalog .katalog-table table tr td:nth-of-type(3) {
+          .catalog .catalog-table table tr td:nth-of-type(3) {
             width: 130px;
             padding: 7px 0 0 32px; }
-          .katalog .katalog-table table tr td:nth-of-type(4) {
+          .catalog .catalog-table table tr td:nth-of-type(4) {
             width: 130px; }
-          .katalog .katalog-table table tr td:nth-of-type(5) {
+          .catalog .catalog-table table tr td:nth-of-type(5) {
             width: 96px;
             padding: 10px 0 0 20px; }
-          .katalog .katalog-table table tr td:nth-of-type(6) {
+          .catalog .catalog-table table tr td:nth-of-type(6) {
             width: 126px;
             padding-left: 27px; }
-          .katalog .katalog-table table tr td:nth-of-type(7) {
+          .catalog .catalog-table table tr td:nth-of-type(7) {
             width: 60px;
             padding-left: 22px; }
-          .katalog .katalog-table table tr td span,
-          .katalog .katalog-table table tr td .slika {
+          .catalog .catalog-table table tr td span,
+          .catalog .catalog-table table tr td .slika {
             display: none; }
-          .katalog .katalog-table table tr td a.stanje-lagera {
+          .catalog .catalog-table table tr td a.stanje-lagera {
             margin-top: -16px; }
-          .katalog .katalog-table table tr td .table-logo {
+          .catalog .catalog-table table tr td .table-logo {
             max-width: 90px; }
-    .katalog .katalog-table .katalog-img-section .katalog-img {
+    .catalog .catalog-table .catalog-img-section .catalog-img {
       border: 1px solid #979797; }
-      .katalog .katalog-table .katalog-img-section .katalog-img figcaption {
+      .catalog .catalog-table .catalog-img-section .catalog-img figcaption {
         background-color: #061d44;
         color: #fff;
         height: 34px;
         text-align: center; }
-    .katalog .katalog-table .katalog-img-section a {
+    .catalog .catalog-table .catalog-img-section a {
       color: #000; } }
-.proizvod .proizvod-img {
+.product .product-img {
   border: 1px solid #979797; }
-.proizvod .proizvod-content .proizvod-title {
+.product .product-content .product-title {
   font-size: 2rem;
   font-family: "HelveticaNeue-Bold";
   line-height: 3rem; }
-.proizvod .proizvod-content .dostupnost-proizvoda span {
+.product .product-content .product-available span {
   display: inline-block;
   width: 12px;
   height: 12px;
   border: 1px solid #bd0825;
   border-radius: 50%;
   background-color: #bd0825; }
-  .proizvod .proizvod-content .dostupnost-proizvoda span.na-stanju {
+  .product .product-content .product-available span.na-stanju {
     border: 1px solid #00c340;
     background-color: #00c340; }
-.proizvod .proizvod-content .middle-list {
+.product .product-content .middle-list {
   font-family: "HelveticaNeue-Bold";
   text-transform: uppercase; }
-.proizvod .proizvod-content .right-list a {
+.product .product-content .right-list a {
   color: #000000; }
-.proizvod .proizvod-content .bottom-list .b-bottom::after {
+.product .product-content .bottom-list .b-bottom::after {
   content: "";
   height: 1px;
   width: 120px;
@@ -10755,52 +10737,52 @@ footer {
   display: block;
   position: relative;
   margin: 5px 0; }
-.proizvod .proizvod-content .bottom-list .cena {
+.product .product-content .bottom-list .cena {
   font-family: "HelveticaNeue-Bold";
   font-size: 2.4rem; }
-.proizvod .proizvod-content .bottom-list .kolicina {
+.product .product-content .bottom-list .kolicina {
   width: 50px;
   height: 38px;
   margin-left: 5px; }
-.proizvod .proizvod-content .bottom-list .popust {
+.product .product-content .bottom-list .popust {
   width: 40px;
   height: 36px;
   margin-left: 100px; }
-.proizvod .proizvod-content .bottom-list .btn-dodaj {
+.product .product-content .bottom-list .btn-dodaj {
   width: 160px;
   height: 45px;
   background-color: #061d44;
   color: #ffffff;
   font-size: 1.6rem; }
-  .proizvod .proizvod-content .bottom-list .btn-dodaj img {
+  .product .product-content .bottom-list .btn-dodaj img {
     height: 18px;
     width: 18px;
     padding-right: 5px; }
-.proizvod .card-section {
+.product .card-section {
   margin-bottom: 60px; }
-  .proizvod .card-section .card-header {
+  .product .card-section .card-header {
     width: 152px;
     height: 34px;
     background-color: #061d44;
     color: #ffffff;
     text-align: center;
     line-height: normal; }
-  .proizvod .card-section .card {
+  .product .card-section .card {
     border-color: #979797; }
-    .proizvod .card-section .card .card-body .card-text {
+    .product .card-section .card .card-body .card-text {
       margin: 0px; }
 
 @media (min-width: 768px) {
-  .proizvod .proizvod-content .bottom-list .popust {
+  .product .product-content .bottom-list .popust {
     margin-left: 19px; } }
 @media (min-width: 992px) {
-  .proizvod .proizvod-content .middle-list,
-  .proizvod .proizvod-content .right-list {
+  .product .product-content .middle-list,
+  .product .product-content .right-list {
     text-align: right; }
-  .proizvod .proizvod-content .bottom-list .popust {
+  .product .product-content .bottom-list .popust {
     margin-left: 88px; } }
 @media (min-width: 1200px) {
-  .proizvod .proizvod-content .bottom-list .popust {
+  .product .product-content .bottom-list .popust {
     margin-left: 139px; } }
 .modal .modal-dialog .modal-content {
   background-color: #ececec;
@@ -10811,64 +10793,82 @@ footer {
     width: 100%; }
     .modal .modal-dialog .modal-content .modal-body table tbody tr td span {
       display: inline-block;
-      width: 12px;
-      height: 12px;
+      width: 10px;
+      height: 10px;
       border: 1px solid #bd0825;
       border-radius: 50%;
       background-color: #bd0825; }
-      .modal .modal-dialog .modal-content .modal-body table tbody tr td span.na-stanju {
+      .modal .modal-dialog .modal-content .modal-body table tbody tr td span.available {
         border: 1px solid #00c340;
         background-color: #00c340; }
 
-#modalProduct .modal-content .modal-header {
+#modalProduct .modal-content .modal-header, #modalRelatedProduct .modal-content .modal-header {
   flex-direction: column;
   align-items: center;
   padding: 0;
   background-color: #d2d2d2; }
-  #modalProduct .modal-content .modal-header .breadcrumb {
+  #modalProduct .modal-content .modal-header .breadcrumb, #modalRelatedProduct .modal-content .modal-header .breadcrumb {
     background-color: transparent; }
-    #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item {
+    #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item, #modalRelatedProduct .modal-content .modal-header .breadcrumb .breadcrumb-item {
       text-transform: uppercase;
       font-size: 1.2rem; }
-      #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active {
+      #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active, #modalRelatedProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active {
         display: inline-block;
         padding-left: 13px;
         color: #000;
         text-decoration: underline; }
-        #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before {
+        #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before, #modalRelatedProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before {
           content: ">>";
           display: inline-block;
           padding-right: 0.5rem;
           color: #000;
           font-size: 1rem; }
-  #modalProduct .modal-content .modal-header div a {
+  #modalProduct .modal-content .modal-header div a, #modalRelatedProduct .modal-content .modal-header div a {
     color: #061d44;
     padding: 0 5px;
     font-size: 1.2rem; }
-    #modalProduct .modal-content .modal-header div a:hover {
+    #modalProduct .modal-content .modal-header div a:hover, #modalRelatedProduct .modal-content .modal-header div a:hover {
       text-decoration: none; }
-#modalProduct .modal-content .modal-body .bottom-slider li {
+#modalProduct .modal-content .modal-body .bottom-slider li, #modalRelatedProduct .modal-content .modal-body .bottom-slider li {
   max-height: 100px; }
-  #modalProduct .modal-content .modal-body .bottom-slider li img {
+  #modalProduct .modal-content .modal-body .bottom-slider li img, #modalRelatedProduct .modal-content .modal-body .bottom-slider li img {
     height: 100px; }
-#modalProduct .modal-content .modal-body .proizvod-content .proizvod-title {
+#modalProduct .modal-content .modal-body .product-content .product-title, #modalRelatedProduct .modal-content .modal-body .product-content .product-title {
   font-size: 1.4rem;
   font-family: "HelveticaNeue-Bold"; }
-#modalProduct .modal-content .modal-body .proizvod-content p {
+#modalProduct .modal-content .modal-body .product-content p, #modalRelatedProduct .modal-content .modal-body .product-content p {
   border-bottom: 1px dotted #061d44;
   border-width: 50%; }
-#modalProduct .modal-content .modal-footer {
-  justify-content: flex-start; }
-  #modalProduct .modal-content .modal-footer .card-section {
-    width: 100%; }
-    #modalProduct .modal-content .modal-footer .card-section .card-header {
-      width: 152px;
-      height: 34px;
-      background-color: #061d44;
-      color: #fff;
-      text-align: center;
-      line-height: normal;
-      font-size: 1.4rem; }
+#modalProduct .modal-content .specification, #modalRelatedProduct .modal-content .specification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  #modalProduct .modal-content .specification span, #modalRelatedProduct .modal-content .specification span {
+    background-color: #061d44;
+    padding: 8px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem; }
+  #modalProduct .modal-content .specification .related-products-table, #modalRelatedProduct .modal-content .specification .related-products-table {
+    list-style: none;
+    display: flex;
+    padding: 0px; }
+    #modalProduct .modal-content .specification .related-products-table.head, #modalRelatedProduct .modal-content .specification .related-products-table.head {
+      margin-top: 10px; }
+      #modalProduct .modal-content .specification .related-products-table.head li, #modalRelatedProduct .modal-content .specification .related-products-table.head li {
+        background-color: #d2d2d2;
+        margin-right: 3px;
+        width: 120px; }
+    #modalProduct .modal-content .specification .related-products-table li, #modalRelatedProduct .modal-content .specification .related-products-table li {
+      margin-right: 3px;
+      width: 120px; }
+      #modalProduct .modal-content .specification .related-products-table li img, #modalRelatedProduct .modal-content .specification .related-products-table li img {
+        height: 45px; }
+    #modalProduct .modal-content .specification .related-products-table:not(.head):hover, #modalRelatedProduct .modal-content .specification .related-products-table:not(.head):hover {
+      cursor: pointer; }
+      #modalProduct .modal-content .specification .related-products-table:not(.head):hover li, #modalRelatedProduct .modal-content .specification .related-products-table:not(.head):hover li {
+        background-color: #061d44;
+        color: #fff; }
 
 @media (min-width: 576px) {
   #modalProduct .modal-content .modal-header {

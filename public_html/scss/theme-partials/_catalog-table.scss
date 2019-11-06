@@ -3,8 +3,8 @@ $th-text-color: #fff;
 $odd-row-bg: #d2d2d2;
 $even-row-bg: #ececec;
 
-.katalog {
-  .katalog-table {
+.catalog {
+  .catalog-table {
     margin-bottom: 20px;
     thead {
       display: none;
@@ -56,7 +56,7 @@ $even-row-bg: #ececec;
           }
         } // div
 
-        &.naziv {
+        &.name {
           p{
             text-transform: uppercase;
             font-family: $helvetica-bold;
@@ -69,8 +69,8 @@ $even-row-bg: #ececec;
 }
 
 @media (min-width: 576px) {
-  .katalog {
-    .katalog-table {
+  .catalog {
+    .catalog-table {
       tr {
         max-width: 49%;
       }
@@ -78,8 +78,8 @@ $even-row-bg: #ececec;
   }
 }
 @media (min-width: 768px) {
-  .katalog {
-    .katalog-table {
+  .catalog {
+    .catalog-table {
       tr {
         max-width: 32%;
       }
@@ -88,8 +88,8 @@ $even-row-bg: #ececec;
 }
 
 @media (min-width: 992px) {
-  .katalog {
-    .katalog-table {
+  .catalog {
+    .catalog-table {
       tr {
         max-width: 24%;
       }
@@ -98,8 +98,8 @@ $even-row-bg: #ececec;
 }
 
 @media (min-width: 1200px) {
-  .katalog {
-    .katalog-table {
+  .catalog {
+    .catalog-table {
       margin-bottom: 90px;
       table {
         font-size: 1.4rem;
@@ -196,8 +196,8 @@ $even-row-bg: #ececec;
           }
         }
       }
-      .katalog-img-section{
-        .katalog-img {
+      .catalog-img-section{
+        .catalog-img {
           border: 1px solid #979797;
           figcaption {
             background-color: $thead-bg;
@@ -211,6 +211,6 @@ $even-row-bg: #ececec;
           
         }
       }
-    } //katalog table end
+    } //catalog table end
   }
 }

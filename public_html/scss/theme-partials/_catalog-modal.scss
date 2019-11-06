@@ -3,6 +3,7 @@ $stanje-color: #bd0825;
 $prew-next-color: #061d44;
 $modal-header-bg: #d2d2d2;
 $card-header-text: #fff;
+$span-bg: #061d44;
 
 // modal lager
 .modal {
@@ -24,12 +25,12 @@ $card-header-text: #fff;
               td {
                 span {
                   display: inline-block;
-                  width: 12px;
-                  height: 12px;
+                  width: 10px;
+                  height: 10px;
                   border: 1px solid #bd0825;
                   border-radius: 50%;
                   background-color: #bd0825;
-                  &.na-stanju {
+                  &.available {
                     border: 1px solid #00c340;
                     background-color: #00c340;
                   }
@@ -46,7 +47,7 @@ $card-header-text: #fff;
 
 // modal products start
 
-#modalProduct {
+#modalProduct, #modalRelatedProduct {
   .modal-content {
     .modal-header {
       flex-direction: column;
@@ -94,8 +95,8 @@ $card-header-text: #fff;
           }
         }
       }
-      .proizvod-content {
-        .proizvod-title {
+      .product-content {
+        .product-title {
           font-size: 1.4rem;
           font-family: $helvetica-bold;
         }
@@ -106,22 +107,48 @@ $card-header-text: #fff;
       }
     } //modal-body end
 
-    .modal-footer {
-      justify-content: flex-start;
-      .card-section {
-        width: 100%;
-        .card-header {
-          width: 152px;
-          height: 34px;
-          background-color: $prew-next-color;
-          color: $card-header-text;
-          text-align: center;
-          line-height: normal;
-          font-size: 1.4rem;
+    .specification {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      span{
+        background-color: $span-bg;
+        padding: 8px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+      }
+
+      .related-products-table{
+        list-style: none;
+        display: flex;
+        padding: 0px;
+        &.head{
+          margin-top: 10px;
+          li{
+            background-color: $modal-header-bg;
+            margin-right: 3px;
+            width: 120px;
+          }
+        } // .head end
+        li{
+          margin-right: 3px;
+          width: 120px;
+          img{
+            height: 45px;
+          }
+        }
+
+        &:not(.head):hover{
+          cursor: pointer;
+          li{
+            background-color: $span-bg;
+            color: #fff;
+          }
         }
       }
-    }
-  } // modal content end
+    } // .modal-footer end
+  } // .modal-content end
 }
 
 @media (min-width: 576px) {

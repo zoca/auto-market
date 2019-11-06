@@ -136,11 +136,15 @@ $(document).ready(function () {
     $('.stanje-lagera').click(function (e) {
         e.preventDefault();
         e.stopPropagation();
-        $('#myModal').modal('show');
+        $('#modalLager').modal('show');
     });
 
-    // slick slider
-    if ($('.product-slider')) {
+    // inicialize slick inside modal
+
+    
+    $('#modalProduct').on('shown.bs.modal', function () {
+
+        // slick slider
         $('.product-slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -161,15 +165,24 @@ $(document).ready(function () {
 
         $('.product-slider a').zoom();
 
-    }
+    });
 
-    //change img on katalog
+    // open modalProduct from related-products
+
+    // $('.open-modalProduct').click(function (e){
+
+
+    //     $('#modalProduct').modal('show');
+    // });
+
+
+    //change img on catalog
 
     $('.catalog-table-body tr').hover(function (e) {
         e.stopPropagation();
 
-        let imgSrc = $(this).find('.naziv').attr('data-image');
-        $('.katalog-img img').attr('src', imgSrc);
+        let imgSrc = $(this).find('.name').attr('data-image');
+        $('.catalog-img img').attr('src', imgSrc);
 
         let position = $(this).index();
         if (position === 0) {
@@ -178,12 +191,6 @@ $(document).ready(function () {
             $('.prew-arrow').css('display', 'inline-block');
         }
     });
-
-
-
-
-
-
 
 
 
@@ -213,6 +220,3 @@ $(document).ready(function () {
 
 });
 
-$('.modal').on('shown.bs.modal', function (e) {
-    $(window).resize();
-});

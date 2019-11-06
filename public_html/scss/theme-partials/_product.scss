@@ -3,19 +3,19 @@ $btn-text: $base-link-color;
 $border-color: #979797;
 
 
-.proizvod {
+.product {
 
-  .proizvod-img{
+  .product-img{
     border: 1px solid $border-color;
   }
-  .proizvod-content {
-    .proizvod-title {
+  .product-content {
+    .product-title {
       font-size: 2rem;
       font-family: $helvetica-bold;
       line-height: 3rem;
     }
 
-    .dostupnost-proizvoda {
+    .product-available {
       span {
         display: inline-block;
         width: 12px;
@@ -28,7 +28,7 @@ $border-color: #979797;
           background-color: #00c340;
         }
       }
-    } // dostupnost-proizvoda end
+    } // .product-available end
 
     .middle-list {
       font-family: $helvetica-bold;
@@ -85,7 +85,7 @@ $border-color: #979797;
         }
       }
     } // bottom-list end
-  } // proizvod-content end
+  } // product-content end
 
   .card-section {
     margin-bottom: 60px;
@@ -110,8 +110,8 @@ $border-color: #979797;
 }
 
 @media (min-width: 768px) {
-  .proizvod {
-    .proizvod-content {
+  .product {
+    .product-content {
       .bottom-list {
         .popust {
           margin-left: 19px;
@@ -122,8 +122,8 @@ $border-color: #979797;
 }
 
 @media (min-width: 992px) {
-  .proizvod {
-    .proizvod-content {
+  .product {
+    .product-content {
       .middle-list,
       .right-list {
         text-align: right;
@@ -138,8 +138,8 @@ $border-color: #979797;
 }
 
 @media (min-width: 1200px) {
-    .proizvod {
-      .proizvod-content {
+    .product {
+      .product-content {
         .bottom-list {
           .popust {
             margin-left: 139px;
