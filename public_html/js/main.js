@@ -153,7 +153,7 @@ $(document).ready(function () {
             asNavFor: '.bottom-slider'
         });
         $('.bottom-slider').slick({
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             asNavFor: '.product-slider',
             dots: false,

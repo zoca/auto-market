@@ -10737,24 +10737,24 @@ footer {
   display: block;
   position: relative;
   margin: 5px 0; }
-.product .product-content .bottom-list .cena {
+.product .product-content .bottom-list .price {
   font-family: "HelveticaNeue-Bold";
   font-size: 2.4rem; }
-.product .product-content .bottom-list .kolicina {
+.product .product-content .bottom-list .sum {
   width: 50px;
   height: 38px;
   margin-left: 5px; }
-.product .product-content .bottom-list .popust {
+.product .product-content .bottom-list .discount {
   width: 40px;
   height: 36px;
   margin-left: 100px; }
-.product .product-content .bottom-list .btn-dodaj {
+.product .product-content .bottom-list .btn-add {
   width: 160px;
   height: 45px;
   background-color: #061d44;
   color: #ffffff;
   font-size: 1.6rem; }
-  .product .product-content .bottom-list .btn-dodaj img {
+  .product .product-content .bottom-list .btn-add img {
     height: 18px;
     width: 18px;
     padding-right: 5px; }
@@ -10773,16 +10773,16 @@ footer {
       margin: 0px; }
 
 @media (min-width: 768px) {
-  .product .product-content .bottom-list .popust {
+  .product .product-content .bottom-list .discount {
     margin-left: 19px; } }
 @media (min-width: 992px) {
   .product .product-content .middle-list,
   .product .product-content .right-list {
     text-align: right; }
-  .product .product-content .bottom-list .popust {
+  .product .product-content .bottom-list .discount {
     margin-left: 88px; } }
 @media (min-width: 1200px) {
-  .product .product-content .bottom-list .popust {
+  .product .product-content .bottom-list .discount {
     margin-left: 139px; } }
 .modal .modal-dialog .modal-content {
   background-color: #ececec;
@@ -10802,77 +10802,116 @@ footer {
         border: 1px solid #00c340;
         background-color: #00c340; }
 
-#modalProduct .modal-content .modal-header, #modalRelatedProduct .modal-content .modal-header {
+#modalProduct .modal-content .modal-header {
   flex-direction: column;
   align-items: center;
   padding: 0;
   background-color: #d2d2d2; }
-  #modalProduct .modal-content .modal-header .breadcrumb, #modalRelatedProduct .modal-content .modal-header .breadcrumb {
+  #modalProduct .modal-content .modal-header .breadcrumb {
     background-color: transparent; }
-    #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item, #modalRelatedProduct .modal-content .modal-header .breadcrumb .breadcrumb-item {
+    #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item {
       text-transform: uppercase;
       font-size: 1.2rem; }
-      #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active, #modalRelatedProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active {
+      #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active {
         display: inline-block;
         padding-left: 13px;
         color: #000;
         text-decoration: underline; }
-        #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before, #modalRelatedProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before {
+        #modalProduct .modal-content .modal-header .breadcrumb .breadcrumb-item.active::before {
           content: ">>";
           display: inline-block;
           padding-right: 0.5rem;
           color: #000;
           font-size: 1rem; }
-  #modalProduct .modal-content .modal-header div a, #modalRelatedProduct .modal-content .modal-header div a {
+  #modalProduct .modal-content .modal-header div a {
     color: #061d44;
     padding: 0 5px;
     font-size: 1.2rem; }
-    #modalProduct .modal-content .modal-header div a:hover, #modalRelatedProduct .modal-content .modal-header div a:hover {
+    #modalProduct .modal-content .modal-header div a:hover {
       text-decoration: none; }
-#modalProduct .modal-content .modal-body .bottom-slider li, #modalRelatedProduct .modal-content .modal-body .bottom-slider li {
+#modalProduct .modal-content .modal-body .bottom-slider-wrapper li {
   max-height: 100px; }
-  #modalProduct .modal-content .modal-body .bottom-slider li img, #modalRelatedProduct .modal-content .modal-body .bottom-slider li img {
+  #modalProduct .modal-content .modal-body .bottom-slider-wrapper li img {
     height: 100px; }
-#modalProduct .modal-content .modal-body .product-content .product-title, #modalRelatedProduct .modal-content .modal-body .product-content .product-title {
+#modalProduct .modal-content .modal-body .bottom-slider-wrapper .slick-list {
+  padding: 0px !important; }
+#modalProduct .modal-content .modal-body .bottom-slider-wrapper .slick-track {
+  width: 100%; }
+#modalProduct .modal-content .modal-body .product-content .product-title {
   font-size: 1.4rem;
   font-family: "HelveticaNeue-Bold"; }
-#modalProduct .modal-content .modal-body .product-content p, #modalRelatedProduct .modal-content .modal-body .product-content p {
+#modalProduct .modal-content .modal-body .product-content p {
   border-bottom: 1px dotted #061d44;
   border-width: 50%; }
-#modalProduct .modal-content .specification, #modalRelatedProduct .modal-content .specification {
+#modalProduct .modal-content .modal-body .product-content .bottom-list .b-bottom::after {
+  content: "";
+  height: 1px;
+  width: 120px;
+  background-color: #979797;
+  display: block;
+  position: relative;
+  margin: 5px 0; }
+#modalProduct .modal-content .modal-body .product-content .bottom-list .price {
+  font-family: "HelveticaNeue-Bold";
+  font-size: 2.4rem; }
+#modalProduct .modal-content .modal-body .product-content .bottom-list .sum {
+  width: 50px;
+  height: 38px;
+  margin-left: 5px; }
+#modalProduct .modal-content .modal-body .product-content .bottom-list .discount {
+  width: 40px;
+  height: 36px;
+  margin-left: 80px; }
+#modalProduct .modal-content .modal-body .product-content .bottom-list .btn-add {
+  width: 160px;
+  height: 45px;
+  background-color: #061d44;
+  color: #ffffff;
+  font-size: 1.6rem; }
+  #modalProduct .modal-content .modal-body .product-content .bottom-list .btn-add img {
+    height: 18px;
+    width: 18px;
+    padding-right: 5px; }
+#modalProduct .modal-content .specification {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start; }
-  #modalProduct .modal-content .specification span, #modalRelatedProduct .modal-content .specification span {
+  #modalProduct .modal-content .specification span {
     background-color: #061d44;
     padding: 8px;
     color: #fff;
     text-transform: uppercase;
     font-size: 1.4rem; }
-  #modalProduct .modal-content .specification .related-products-table, #modalRelatedProduct .modal-content .specification .related-products-table {
+  #modalProduct .modal-content .specification .related-products-table {
     list-style: none;
     display: flex;
+    flex-direction: column;
     padding: 0px; }
-    #modalProduct .modal-content .specification .related-products-table.head, #modalRelatedProduct .modal-content .specification .related-products-table.head {
+    #modalProduct .modal-content .specification .related-products-table.head {
       margin-top: 10px; }
-      #modalProduct .modal-content .specification .related-products-table.head li, #modalRelatedProduct .modal-content .specification .related-products-table.head li {
+      #modalProduct .modal-content .specification .related-products-table.head li {
         background-color: #d2d2d2;
         margin-right: 3px;
         width: 120px; }
-    #modalProduct .modal-content .specification .related-products-table li, #modalRelatedProduct .modal-content .specification .related-products-table li {
+    #modalProduct .modal-content .specification .related-products-table li {
       margin-right: 3px;
       width: 120px; }
-      #modalProduct .modal-content .specification .related-products-table li img, #modalRelatedProduct .modal-content .specification .related-products-table li img {
+      #modalProduct .modal-content .specification .related-products-table li img {
         height: 45px; }
-    #modalProduct .modal-content .specification .related-products-table:not(.head):hover, #modalRelatedProduct .modal-content .specification .related-products-table:not(.head):hover {
+    #modalProduct .modal-content .specification .related-products-table:not(.head):hover {
       cursor: pointer; }
-      #modalProduct .modal-content .specification .related-products-table:not(.head):hover li, #modalRelatedProduct .modal-content .specification .related-products-table:not(.head):hover li {
+      #modalProduct .modal-content .specification .related-products-table:not(.head):hover li {
         background-color: #061d44;
         color: #fff; }
 
 @media (min-width: 576px) {
   #modalProduct .modal-content .modal-header {
-    flex-direction: row; } }
+    flex-direction: row; }
+  #modalProduct .modal-content .related-products-table {
+    flex-direction: row !important; } }
+@media (min-width: 992px) {
+  .modal-body .product-content .bottom-list .discount {
+    margin-left: 7px !important; } }
 @media (min-width: 1200px) {
   #modalProduct .modal-dialog {
     max-width: 70%; }
@@ -10890,6 +10929,8 @@ footer {
         background: #061d44; }
         #modalProduct .modal-dialog .modal-content .modal-header div a:first-of-type::after .fa-angle-left,
         #modalProduct .modal-dialog .modal-content .modal-header div a:first-of-type::after .fa-angle-right {
-          font-size: 1.4rem; } }
+          font-size: 1.4rem; }
+    #modalProduct .modal-dialog .modal-content .bottom-list .discount {
+      margin-left: 80px !important; } }
 
 /*# sourceMappingURL=theme.css.map */

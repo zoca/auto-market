@@ -233,7 +233,7 @@ and open the template in the editor.
                                 <label class="pr-2" for="">Sortiraj po</label>
                                 <select class="form-control" name="sortiraj">
                                     <option value="name">Nazivu (asc)</option>
-                                    <option value="cena">Ceni</option>
+                                    <option value="price">Ceni</option>
                                 </select>
                             </div>
                         </div>
@@ -777,12 +777,13 @@ and open the template in the editor.
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <nav aria-label="breadcrumb">
+                    <nav aria-label="breadcrumb" class="d-flex d-sm-block justify-content-between">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">katalog</li>
                             <li class="breadcrumb-item">Proizvođač</li>
                             <li class="breadcrumb-item active">Naziv</li>
                         </ol>
+                        <button type="button" class="close mb-2 pl-5 d-sm-none" data-dismiss="modal">&times;</button>
                     </nav>
                     <div>
                         <a class="prew-arrow" href="#">
@@ -798,10 +799,13 @@ and open the template in the editor.
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-12 col-lg-7 mb-3">
-                                <div class="product-slider">
+                            <div class="col-12 col-xl-7">
+                                <div class="product-slider mb-3">
                                     <a href="img/big-img/ASARE3118VALEO.png" data-fancybox="gallery">
-                                        <img src="img/big-img/ASARE3118VALEO.png" alt="">
+                                        <img src="https://via.placeholder.com/520" alt="">
+                                    </a>
+                                    <a href="img/big-img/bcool.png" data-fancybox="gallery">
+                                        <img src="img/big-img/bcool.png" alt="">
                                     </a>
                                     <a href="img/big-img/kombinezon.png" data-fancybox="gallery">
                                         <img src="img/big-img/kombinezon.png" alt="">
@@ -809,9 +813,31 @@ and open the template in the editor.
                                     <a href="img/big-img/bcool.png" data-fancybox="gallery">
                                         <img src="img/big-img/bcool.png" alt="">
                                     </a>
+                                    <a href="img/big-img/bcool.png" data-fancybox="gallery">
+                                        <img src="img/big-img/bcool.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="bottom-slider-wrapper">
+                                    <ul class="list-unstyled bottom-slider">
+                                        <li>
+                                            <img src="https://via.placeholder.com/100" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/big-img/bcool.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/big-img/kombinezon.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/big-img/bcool.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/big-img/bcool.png" alt="">
+                                        </li>
+                                    </ul>
                                 </div>
                             </div> <!-- .col end-->
-                            <div class="col-12 col-lg-5 order-1 order-lg-0">
+                            <div class="col-12 col-xl-5">
                                 <article class="product-content">
                                     <h2 class="product-title text-uppercase text-wrap">regler 12v valeo com audio a6
                                         2.0
@@ -861,35 +887,41 @@ and open the template in the editor.
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p>pozovite za cenu</p>
+                                            <ul class="list-unstyled bottom-list mb-3">
+                                                <li>Cena RSD:</li>
+                                                <li class="price">5.200,00</li>
+                                                <li>DISCOUNT: 0%</li>
+                                                <li class="b-bottom">PDV: 20%</li>
+                                                <li class="price mb-5">6.240,00</li>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <label for="">Kolicina</label>
+                                                        <input type="number" class="sum" name="sum" value="1">
+                                                        <img class="discount" src="img/product/discount.png" alt="">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-group">
+                                                        <button class="btn btn-add" type="submit" name="add-to-cart"><img
+                                                                src="img/icon.png">Dodaj u korpu</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
                                         </div> <!-- .col end-->
                                     </div> <!-- .row end-->
                                 </article> <!-- .product-content end-->
                             </div> <!-- .col end-->
-                            <div class="col-12 col-lg-7">
-                                <div class="bottom-slider-wrapper">
-                                    <ul class="list-unstyled bottom-slider">
-                                        <li>
-                                            <img src="img/big-img/ASARE3118VALEO.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="img/big-img/kombinezon.png" alt="">
-                                        </li>
-                                        <li>
-                                            <img src="img/big-img/bcool.png" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> <!-- .col end-->
                         </div> <!-- .row end-->
                         <div class="row specification">
-                            <div class="col-12 mb-4">
-                                <span>Cros-reference</span>
-                                <span>18 50855</span>
-                                <span>as0188</span>
-                            </div>
                             <div class="col-12">
-                                <span class="mt-3">zamenski artikli</span>
+                                <div class="reference mb-4">
+                                    <span>Cros-reference</span>
+                                    <span>18 50855</span>
+                                    <span>as0188</span>
+                                </div>
+                                <span>zamenski artikli</span>
+                            </div>
+                            <div class="col-6 col-sm-12">
                                 <ul class="related-products-table head">
                                     <li>Slika</li>
                                     <li>Naziv</li>
@@ -899,10 +931,10 @@ and open the template in the editor.
                                     <li>Cena</li>
                                 </ul>
                             </div>
-                            <div class="col-12">
-                                <ul class="related-products-table" data-toggle="modal" data-target="#modalRelatedProduct">
+                            <div class="col-6 col-sm-12">
+                                <ul class="related-products-table mt-3 mt-sm-0">
                                     <li>
-                                        <img src="img/catalog/bcool.png" alt="">
+                                        <img src="https://via.placeholder.com/50" alt="">
                                     </li>
                                     <li>regler 12v valeo com</li>
                                     <li>44458886</li>
@@ -912,7 +944,6 @@ and open the template in the editor.
                                 </ul>
                             </div>
                         </div> <!-- .row end-->
-
                     </div> <!-- .container-fluid end-->
                     <div class="modal-footer">
                     </div> <!-- .modal-footer end-->
@@ -921,160 +952,6 @@ and open the template in the editor.
         </div> <!-- .modal-dialog end-->
     </div>
     <!-- #modalProduct end-->
-
-     <!-- Modal related product-->
-     <div class="modal fade" id="modalRelatedProduct" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">katalog</li>
-                                <li class="breadcrumb-item">Proizvođač</li>
-                                <li class="breadcrumb-item active">Naziv</li>
-                            </ol>
-                        </nav>
-                        <div>
-                            <a class="prew-arrow" href="#">
-                                <i class="fa fa-angle-left"></i>
-                                <span>Prethodni artikal</span>
-                            </a>
-                            <a href="#">
-                                <span>Sledeci artikal</span>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 col-lg-7 mb-3">
-                                    <div class="product-slider">
-                                        <a href="img/big-img/ASARE3118VALEO.png" data-fancybox="gallery">
-                                            <img src="img/big-img/ASARE3118VALEO.png" alt="">
-                                        </a>
-                                        <a href="img/big-img/kombinezon.png" data-fancybox="gallery">
-                                            <img src="img/big-img/kombinezon.png" alt="">
-                                        </a>
-                                        <a href="img/big-img/bcool.png" data-fancybox="gallery">
-                                            <img src="img/big-img/bcool.png" alt="">
-                                        </a>
-                                    </div>
-                                </div> <!-- .col end-->
-                                <div class="col-12 col-lg-5 order-1 order-lg-0">
-                                    <article class="product-content">
-                                        <h2 class="product-title text-uppercase text-wrap">regler 12v valeo com audio a6
-                                            2.0
-                                            tdi
-                                        </h2>
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <ul class="list-unstyled left-list mb-3">
-                                                    <li>Šifra:</li>
-                                                    <li>Prozivođač:</li>
-                                                    <li>Kataloški broj:</li>
-                                                </ul>
-                                            </div> <!-- .col end-->
-                                            <div class="col-6">
-                                                <ul class="list-unstyled middle-list mb-3">
-                                                    <li>330081</li>
-                                                    <li>-</li>
-                                                    <li>330081</li>
-                                                </ul>
-                                            </div> <!-- .col end-->
-                                            <div class="col-12">
-                                                <table>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Vozdovac</td>
-                                                            <td><span class="available"></span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Novi Beograd</td>
-                                                            <td><span class="available"></span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Stara Pazova</td>
-                                                            <td><span class=""></span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Cacak</td>
-                                                            <td><span class=""></span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Novi Sad</td>
-                                                            <td><span class=""></span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Subotica</td>
-                                                            <td><span class="available"></span></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <p>pozovite za cenu</p>
-                                            </div> <!-- .col end-->
-                                        </div> <!-- .row end-->
-                                    </article> <!-- .product-content end-->
-                                </div> <!-- .col end-->
-                                <div class="col-12 col-lg-7">
-                                    <div class="bottom-slider-wrapper">
-                                        <ul class="list-unstyled bottom-slider">
-                                            <li>
-                                                <img src="img/big-img/ASARE3118VALEO.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="img/big-img/kombinezon.png" alt="">
-                                            </li>
-                                            <li>
-                                                <img src="img/big-img/bcool.png" alt="">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div> <!-- .col end-->
-                            </div> <!-- .row end-->
-                            <div class="row specification">
-                                <div class="col-12 mb-4">
-                                    <span>Cros-reference</span>
-                                    <span>18 50855</span>
-                                    <span>as0188</span>
-                                </div>
-                                <div class="col-12">
-                                    <span class="mt-3">zamenski artikli</span>
-                                    <ul class="related-products-table head">
-                                        <li>Slika</li>
-                                        <li>Naziv</li>
-                                        <li>Šifra</li>
-                                        <li>Prozivođač</li>
-                                        <li>Kataloški broj</li>
-                                        <li>Cena</li>
-                                    </ul>
-                                </div>
-                                <div class="col-12">
-                                    <ul class="related-products-table">
-                                        <li>
-                                            <img src="img/catalog/bcool.png" alt="">
-                                        </li>
-                                        <li>regler 12v valeo com</li>
-                                        <li>44458886</li>
-                                        <li>Bosh</li>
-                                        <li>556887</li>
-                                        <li>15.200,00</li>
-                                    </ul>
-                                </div>
-                            </div> <!-- .row end-->
-    
-                        </div> <!-- .container-fluid end-->
-                        <div class="modal-footer">
-                        </div> <!-- .modal-footer end-->
-                    </div> <!-- .modal-body end-->
-                </div><!-- .modal-content end-->
-            </div> <!-- .modal-dialog end-->
-        </div>
-        <!-- #modalRelatedProduct end-->
-
-
-
-
 
 
     <script src="js/jquery.min.js" type="text/javascript"></script>
