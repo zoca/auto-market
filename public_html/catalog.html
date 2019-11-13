@@ -785,7 +785,7 @@ and open the template in the editor.
                         </ol>
                         <button type="button" class="close mb-2 pl-5 d-sm-none" data-dismiss="modal">&times;</button>
                     </nav>
-                    <div>
+                    <div class="page-arrows">
                         <a class="prew-arrow" href="#">
                             <i class="fa fa-angle-left"></i>
                             <span>Prethodni artikal</span>
@@ -894,16 +894,12 @@ and open the template in the editor.
                                                 <li class="b-bottom">PDV: 20%</li>
                                                 <li class="price mb-5">6.240,00</li>
                                                 <li>
-                                                    <div class="form-group">
+                                                    <div class="form-group d-flex align-items-center">
                                                         <label for="">Kolicina</label>
                                                         <input type="number" class="sum" name="sum" value="1">
-                                                        <img class="discount" src="img/product/discount.png" alt="">
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="form-group">
                                                         <button class="btn btn-add" type="submit" name="add-to-cart"><img
                                                                 src="img/icon.png">Dodaj u korpu</button>
+                                                        <img class="discount" src="img/product/discount.png" alt="">
                                                     </div>
                                                 </li>
                                             </ul>
@@ -920,7 +916,7 @@ and open the template in the editor.
                                 </div>
                                 <span>zamenski artikli</span>
                             </div>
-                            <div class="col-6 col-sm-12">
+                            <div class="col-6 col-sm-12 d-none d-xl-block">
                                 <ul class="related-products-table head">
                                     <li>Slika</li>
                                     <li>Naziv</li>
@@ -930,16 +926,30 @@ and open the template in the editor.
                                     <li>Cena</li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-sm-12">
+                            <div class="col-12">
                                 <ul class="related-products-table mt-3 mt-sm-0">
                                     <li>
                                         <img src="https://via.placeholder.com/50" alt="">
                                     </li>
-                                    <li>regler 12v valeo com</li>
-                                    <li>44458886</li>
-                                    <li>Bosh</li>
-                                    <li>556887</li>
-                                    <li>15.200,00</li>
+                                    <li>
+                                        <span>Naziv: </span>
+                                        regler 12v valeo com</li>
+                                    <li>
+                                        <span>Šifra: </span>
+                                        44458886
+                                    </li>
+                                    <li>
+                                        <span>Prozivođač: </span>
+                                        Bosh
+                                    </li>
+                                    <li>
+                                        <span>Kataloški broj: </span>
+                                        556887
+                                    </li>
+                                    <li>
+                                        <span>Cena: </span>
+                                        15.200,00
+                                    </li>
                                 </ul>
                             </div>
                         </div> <!-- .row end-->
