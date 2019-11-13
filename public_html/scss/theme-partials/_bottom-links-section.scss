@@ -7,7 +7,7 @@ $right-links-color: $font-color;
 .bottom-links {
   .bottom-links-item {
     background-color: $left-bg-color;
-    padding: 10px 0 5px;
+    padding: 9px 0 11px 0;
     text-align: center;
     text-transform: uppercase;
     border-bottom: 0.5px solid $bottom-border-color;
@@ -37,6 +37,7 @@ $right-links-color: $font-color;
     p {
       font-size: 1.4rem;
       margin: 0;
+      text-align: right;
     }
 
     a {
@@ -46,7 +47,6 @@ $right-links-color: $font-color;
       &.mail {
         text-align: right;
         display: block;
-        padding-right: 8px;
       }
 
       &:hover{
@@ -90,7 +90,7 @@ $right-links-color: $font-color;
       text-align: left;
       background-color: transparent;
       border-bottom: 0px;
-      padding-left: 30px;
+      padding-left: 23px;
 
       &.no-border-l{
         border-left: 0px;
@@ -112,8 +112,9 @@ $right-links-color: $font-color;
   .bottom-links {
     background: linear-gradient(to right, $left-bg-color 65%, $right-bg-color 3%);
     .bottom-links-item {
-      border-left: 0.5px solid $bottom-border-color;
-      
+      border-left: 0.5px solid $bottom-border-color;      
+      padding-left: 30px;
+
     }
 
     .bottom-right-side {

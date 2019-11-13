@@ -159,9 +159,13 @@ $span-bg: #061d44;
     } //modal-body end
 
     .specification {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
+      min-height: 85px;
+      // display: flex;
+      // flex-direction: row;
+      // align-items: flex-start;
+      .references{
+        padding: 12px 0;
+      }
       span {
         background-color: $span-bg;
         padding: 8px;
@@ -169,37 +173,37 @@ $span-bg: #061d44;
         text-transform: uppercase;
         font-size: 1.4rem;
       }
+    } // .specification end
 
-      .related-products-table {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        padding: 0px;
-        &.head {
-          margin-top: 10px;
-          li {
-            background-color: $modal-header-bg;
-            margin-right: 3px;
-            width: 120px;
-          }
-        } // .head end
+    .related-products-table {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      padding: 0px;
+      &.head {
+        margin-top: 3px;
         li {
+          background-color: $modal-header-bg;
           margin-right: 3px;
           width: 120px;
-          img {
-            height: 45px;
-          }
         }
-
-        &:not(.head):hover {
-          cursor: pointer;
-          li {
-            background-color: $span-bg;
-            color: #fff;
-          }
+      } // .head end
+      li {
+        margin-right: 3px;
+        width: 120px;
+        img {
+          height: 45px;
         }
       }
-    } // .specification end
+
+      &:not(.head):hover {
+        cursor: pointer;
+        li {
+          background-color: $span-bg;
+          color: #fff;
+        }
+      }
+    }
   } // .modal-content end
 }
 
@@ -216,7 +220,7 @@ $span-bg: #061d44;
   }
 }
 
-@media(min-width:992px){
+@media (min-width: 992px) {
   .modal-body {
     .product-content {
       .bottom-list {
@@ -259,11 +263,11 @@ $span-bg: #061d44;
           }
         }
 
-      .bottom-list {
-        .discount {
-          margin-left: 80px !important;
+        .bottom-list {
+          .discount {
+            margin-left: 80px !important;
+          }
         }
-      }
       }
     }
   }

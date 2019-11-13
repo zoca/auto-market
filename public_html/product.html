@@ -47,7 +47,7 @@ and open the template in the editor.
                 <div class="navbar login-menu">
                     <ul class="navbar-nav flex-row top-ul ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link no-border-l" href="prijava.html">Prijava</a>
+                            <a class="nav-link no-border-l" href="log-in.html">Prijava</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Newsletter</a>
@@ -60,7 +60,7 @@ and open the template in the editor.
                         </li>
                     </ul>
 
-                    <ul class="navbar-nav cart-login ml-4">
+                    <ul class="navbar-nav cart-login">
                         <li class="nav-item cart-icon">
                             <a class="nav-link text-uppercase no-hover bold" href="#">
                                 <img src="img/icon.png" alt="">
@@ -86,7 +86,7 @@ and open the template in the editor.
                     <div class="login-menu d-md-none">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="prijava.html">Prijava</a>
+                                <a class="nav-link" href="log-in.html">Prijava</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Newsletter</a>
@@ -117,13 +117,13 @@ and open the template in the editor.
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase no-border-l active" href="#">katalog</a>
+                            <a class="nav-link text-uppercase no-border-l active" href="catalog.html">katalog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-nowrap text-uppercase" href="o-nama.html">o nama</a>
+                            <a class="nav-link text-nowrap text-uppercase" href="about-us.html">o nama</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="vesti.html">vesti</a>
+                            <a class="nav-link text-uppercase" href="news.html">vesti</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-uppercase" href="#">zaposlenje</a>
@@ -151,15 +151,15 @@ and open the template in the editor.
         <!--container end-->
     </header>
     <main>
-        <section class="katalog mb-5">
+        <section class="catalog mb-5">
             <article class="search-box">
                 <div class="container">
-                    <div class="row justify-content-md-between">
+                    <div class="row justify-content-md-between no-gutters">
                         <div class="col-12 col-md-6 col-lg-4">
                             <div class="form-group d-flex justify-content-between no-gutters">
-                                <input class="form-control" type="text" name="sifra" value=""
+                                <input class="form-control" type="text" name="code" value=""
                                     placeholder="Šifra ili kataloški broj">
-                                <select class="form-control" name="brend">
+                                <select class="form-control mr-sm-0 mr-md-3" name="brend">
                                     <option value="">Brend</option>
                                     <option value="1">Brend1</option>
                                 </select>
@@ -171,7 +171,7 @@ and open the template in the editor.
                                     <option value="">proizvod</option>
                                     <option value="1">Proizvod1</option>
                                 </select>
-                                <input class="form-control" type="text" name="name" value=""
+                                <input class="form-control mr-0" type="text" name="name" value=""
                                     placeholder="Naziv proizvoda">
                             </div>
                         </div><!-- col end-->
@@ -188,7 +188,7 @@ and open the template in the editor.
                         <div class="col-6 col-lg-2 offset-lg-1 pt-2 pt-lg-0">
                             <form action="" method="post">
                                 <div class="form-group d-flex justify-content-end">
-                                    <button class="btn btn-warning trazi" type="submit">TRAŽI</button>
+                                    <button class="btn btn-warning search-btn" type="submit">TRAŽI</button>
                                     <a href="#"><span class="fas fa-search"></span></a>
                                 </div>
                             </form>
@@ -197,7 +197,7 @@ and open the template in the editor.
                 </div><!-- container end-->
             </article>
             <!--saerch-box end-->
-            <article class="katalog-pagination mb-3">
+            <article class="catalog-pagination mb-3">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-4">
@@ -226,9 +226,9 @@ and open the template in the editor.
                         </div>
                         <!--col end-->
                         <div class="col-12 col-sm-5 col-md-5">
-                            <div class="form-group d-flex  justify-content-end sortiraj">
+                            <div class="form-group d-flex justify-content-start justify-content-sm-end sort">
                                 <label class="pr-2" for="">Sortiraj po</label>
-                                <select class="form-control" name="sortiraj">
+                                <select class="form-control" name="sort">
                                     <option value="name">Nazivu (asc)</option>
                                     <option value="price">Ceni</option>
                                 </select>
