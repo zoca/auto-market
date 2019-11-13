@@ -10250,7 +10250,7 @@ header {
     .online-help-section .online-img img:hover {
       transform: scale(1.1); }
 
-.online-content h3 {
+.online-content h2 {
   font-family: "HelveticaNeue-Bold"; }
 .online-content a {
   color: #000000;
@@ -10259,16 +10259,35 @@ header {
   line-height: 2.2rem; }
 .online-content p:nth-of-type(2) {
   margin-bottom: 2.2rem; }
+.online-content .input-group input {
+  height: 33px;
+  font-size: 1.4rem; }
 .online-content .input-group button {
   background-color: #061d44;
   color: #ffffff;
-  padding: 5px 15px; }
+  padding: 5px 15px;
+  font-size: 1.4rem; }
   .online-content .input-group button:hover {
     background: rgba(6, 29, 68, 0.8); }
 .online-content ul li a .fas {
   font-size: 1rem;
   margin-right: 2px; }
 
+@media (min-width: 576px) {
+  .online-content .input-group button {
+    padding: 5px 15px; }
+    .online-content .input-group button:hover {
+      background: rgba(6, 29, 68, 0.8); } }
+@media (min-width: 768px) {
+  .online-content .input-group input {
+    font-size: 1.3rem; }
+  .online-content .input-group button {
+    font-size: 1.3rem; } }
+@media (min-width: 992px) {
+  .online-content .input-group input {
+    font-size: 1.4rem; }
+  .online-content .input-group button {
+    font-size: 1.4rem; } }
 @media (min-width: 576px) {
   .clients-links {
     position: relative; }
@@ -10471,6 +10490,7 @@ footer {
       margin-bottom: 20px; } }
 .news {
   padding: 40px 0; }
+  .news h1,
   .news h3 {
     font-family: "HelveticaNeue-Bold"; }
   .news hr {
@@ -10483,6 +10503,10 @@ footer {
       font-size: 1.2rem; }
     .news p a {
       color: #000000; }
+    .news p .download {
+      text-transform: uppercase;
+      font-family: "HelveticaNeue-Bold";
+      text-decoration: underline; }
 
 @media (min-width: 768px) {
   .news {
