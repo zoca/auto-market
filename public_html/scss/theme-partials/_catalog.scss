@@ -72,6 +72,7 @@ $th-text-color: #fff;
       background: #fff url("../img/arrow.png") no-repeat 96% center;
       font-size: 1.4rem;
       background-size: 10px;
+      text-transform: capitalize;
     } // select end
   } // search box end
 
@@ -134,20 +135,20 @@ $th-text-color: #fff;
 }
 
 @media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
   .catalog {
     .search-box {
       .form-control {
         margin-right: 9px;
       }
     }
-  }
-}
-
-@media (min-width: 768px) {
-  .catalog-pagination {
-    max-height: 38px;
-    .pagination {
-      padding-left: 44px;
+    .catalog-pagination {
+      max-height: 38px;
+      .pagination {
+        padding-left: 44px;
+      }
     }
   }
 }

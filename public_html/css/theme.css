@@ -10539,7 +10539,8 @@ footer {
     -ms-app-appearance: none;
     background: #fff url("../img/arrow.png") no-repeat 96% center;
     font-size: 1.4rem;
-    background-size: 10px; }
+    background-size: 10px;
+    text-transform: capitalize; }
 .catalog .catalog-pagination {
   padding: 5px 0;
   background-color: #ececec; }
@@ -10577,13 +10578,12 @@ footer {
     font-size: 1.4rem;
     background-size: 10px; }
 
-@media (min-width: 576px) {
-  .catalog .search-box .form-control {
-    margin-right: 9px; } }
 @media (min-width: 768px) {
-  .catalog-pagination {
+  .catalog .search-box .form-control {
+    margin-right: 9px; }
+  .catalog .catalog-pagination {
     max-height: 38px; }
-    .catalog-pagination .pagination {
+    .catalog .catalog-pagination .pagination {
       padding-left: 44px; } }
 @media (min-width: 992px) {
   .search-box {
@@ -10760,19 +10760,20 @@ footer {
   font-family: "HelveticaNeue-Bold";
   font-size: 2.4rem; }
 .product .product-content .bottom-list .sum {
-  width: 50px;
+  width: 40px;
   height: 38px;
   margin-left: 5px; }
 .product .product-content .bottom-list .discount {
   width: 40px;
   height: 36px;
-  margin-left: 100px; }
+  margin-left: 5px; }
 .product .product-content .bottom-list .btn-add {
-  width: 160px;
+  width: 138px;
   height: 45px;
   background-color: #061d44;
   color: #ffffff;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-left: 5px; }
   .product .product-content .bottom-list .btn-add img {
     height: 18px;
     width: 18px;
@@ -10791,18 +10792,22 @@ footer {
     .product .card-section .card .card-body .card-text {
       margin: 0px; }
 
+@media (min-width: 576px) {
+  .product .product-content .bottom-list .btn-add {
+    margin-left: 10px; }
+  .product .product-content .bottom-list .discount {
+    margin-left: 10px; } }
 @media (min-width: 768px) {
   .product .product-content .bottom-list .discount {
     margin-left: 19px; } }
 @media (min-width: 992px) {
   .product .product-content .middle-list,
   .product .product-content .right-list {
-    text-align: right; }
-  .product .product-content .bottom-list .discount {
-    margin-left: 88px; } }
+    text-align: right; } }
 @media (min-width: 1200px) {
-  .product .product-content .bottom-list .discount {
-    margin-left: 139px; } }
+  .product .product-content .bottom-list .btn-add {
+    width: 160px;
+    margin-left: 30px; } }
 .modal .modal-dialog .modal-content {
   background-color: #ececec;
   margin: 0 auto; }
