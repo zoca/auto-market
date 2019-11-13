@@ -79,7 +79,7 @@ $th-text-color: #fff;
   .catalog-pagination {
     padding: 5px 0;
     background-color: $pagination-bg;
-
+    font-size: 1.4rem;
     p {
       font-size: 1.4rem;
     }
@@ -154,8 +154,14 @@ $th-text-color: #fff;
 }
 
 @media (min-width: 992px) {
-  .search-box {
-    max-height: 40px;
+  .catalog {
+    .search-box {
+      max-height: 40px;
+    }
+
+    .catalog-pagination {
+      font-size: 1.6rem;
+    }
   }
 }
 
